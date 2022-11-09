@@ -11,9 +11,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("hellow")
         // Do any additional setup after loading the view.
     }
-
 
 }
 
