@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D04757B291B6B3800818C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04757A291B6B3800818C00 /* AppDelegate.swift */; };
 		0D04757D291B6B3800818C00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04757C291B6B3800818C00 /* SceneDelegate.swift */; };
-		0D04757F291B6B3800818C00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04757E291B6B3800818C00 /* ViewController.swift */; };
+		0D04757F291B6B3800818C00 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04757E291B6B3800818C00 /* LoginViewController.swift */; };
 		0D047582291B6B3800818C00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D047580291B6B3800818C00 /* Main.storyboard */; };
 		0D047584291B6B3900818C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D047583291B6B3900818C00 /* Assets.xcassets */; };
 		0D047587291B6B3900818C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D047585291B6B3900818C00 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,9 @@
 		0D04759C291B6B3A00818C00 /* GreenSpaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04759B291B6B3A00818C00 /* GreenSpaceUITests.swift */; };
 		0D04759E291B6B3A00818C00 /* GreenSpaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04759D291B6B3A00818C00 /* GreenSpaceUITestsLaunchTests.swift */; };
 		0D0475AF291B6FEA00818C00 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0D0475AE291B6FEA00818C00 /* Alamofire */; };
+		0D0475B1291B70C200818C00 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B0291B70C200818C00 /* SettingViewController.swift */; };
+		0D0475B3291B70F400818C00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B2291B70F400818C00 /* HomeViewController.swift */; };
+		0D0475B5291B710800818C00 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B4291B710800818C00 /* AlarmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 		0D047577291B6B3800818C00 /* GreenSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D04757A291B6B3800818C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D04757C291B6B3800818C00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0D04757E291B6B3800818C00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D04757E291B6B3800818C00 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0D047581291B6B3800818C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D047583291B6B3900818C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D047586291B6B3900818C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +53,9 @@
 		0D047597291B6B3A00818C00 /* GreenSpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenSpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D04759B291B6B3A00818C00 /* GreenSpaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenSpaceUITests.swift; sourceTree = "<group>"; };
 		0D04759D291B6B3A00818C00 /* GreenSpaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenSpaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D0475B0291B70C200818C00 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		0D0475B2291B70F400818C00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0D0475B4291B710800818C00 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +145,10 @@
 		0D0475AB291B6CFB00818C00 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0D04757E291B6B3800818C00 /* ViewController.swift */,
+				0D04757E291B6B3800818C00 /* LoginViewController.swift */,
+				0D0475B0291B70C200818C00 /* SettingViewController.swift */,
+				0D0475B2291B70F400818C00 /* HomeViewController.swift */,
+				0D0475B4291B710800818C00 /* AlarmViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -290,9 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D04757F291B6B3800818C00 /* ViewController.swift in Sources */,
+				0D0475B3291B70F400818C00 /* HomeViewController.swift in Sources */,
+				0D04757F291B6B3800818C00 /* LoginViewController.swift in Sources */,
+				0D0475B5291B710800818C00 /* AlarmViewController.swift in Sources */,
 				0D04757B291B6B3800818C00 /* AppDelegate.swift in Sources */,
 				0D04757D291B6B3800818C00 /* SceneDelegate.swift in Sources */,
+				0D0475B1291B70C200818C00 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
