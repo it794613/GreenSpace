@@ -9,4 +9,6 @@ import UIKit
 
 class AlarmTableViewCell: UITableViewCell{
     
+    @IBOutlet weak var alarmText: UILabel!
+    
 }
