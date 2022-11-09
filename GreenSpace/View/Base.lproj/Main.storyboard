@@ -11,12 +11,74 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green Space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-Eu-kiM">
+                                <rect key="frame" x="138" y="280" width="114" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JxD-eG-Pok">
+                                <rect key="frame" x="70" y="349" width="250" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="패스워드" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRN-H7-wb6">
+                                <rect key="frame" x="70" y="405" width="250" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXM-f2-0kr">
+                                <rect key="frame" x="254" y="463" width="66" height="29"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="회원가입">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="AppleSDGothicNeo-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 없으면?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFG-Bg-n32">
+                                <rect key="frame" x="159" y="470" width="72" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D77-er-jWv">
+                                <rect key="frame" x="167" y="517" width="56" height="29"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그인">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HRN-H7-wb6" secondAttribute="trailing" constant="70" id="4sQ-H5-xag"/>
+                            <constraint firstItem="HRN-H7-wb6" firstAttribute="centerX" secondItem="JxD-eG-Pok" secondAttribute="centerX" id="7vo-dI-Swx"/>
+                            <constraint firstItem="JxD-eG-Pok" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Bdh-mo-hiX"/>
+                            <constraint firstItem="fXM-f2-0kr" firstAttribute="trailing" secondItem="HRN-H7-wb6" secondAttribute="trailing" id="IxD-W5-7Bb"/>
+                            <constraint firstItem="JxD-eG-Pok" firstAttribute="top" secondItem="VyV-Eu-kiM" secondAttribute="bottom" constant="45" id="MoB-S4-bfp"/>
+                            <constraint firstItem="HRN-H7-wb6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="O7d-Sw-Kv6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JxD-eG-Pok" secondAttribute="trailing" constant="70" id="PRE-WT-rkB"/>
+                            <constraint firstItem="D77-er-jWv" firstAttribute="top" secondItem="BFG-Bg-n32" secondAttribute="bottom" constant="32" id="QSy-BA-uAX"/>
+                            <constraint firstItem="VyV-Eu-kiM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RkB-bH-NWi"/>
+                            <constraint firstItem="JxD-eG-Pok" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T0I-Nh-ZuK"/>
+                            <constraint firstItem="HRN-H7-wb6" firstAttribute="top" secondItem="JxD-eG-Pok" secondAttribute="bottom" constant="22" id="b7Z-lv-ok7"/>
+                            <constraint firstItem="VyV-Eu-kiM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="189" id="c2z-tq-CPZ"/>
+                            <constraint firstItem="BFG-Bg-n32" firstAttribute="top" secondItem="fXM-f2-0kr" secondAttribute="bottom" constant="-22" id="dc2-mh-QXZ"/>
+                            <constraint firstItem="fXM-f2-0kr" firstAttribute="top" secondItem="HRN-H7-wb6" secondAttribute="bottom" constant="24" id="kFE-P6-btf"/>
+                            <constraint firstItem="D77-er-jWv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ocl-DK-3hD"/>
+                            <constraint firstItem="BFG-Bg-n32" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s8N-m9-kst"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6yV-Vb-efU"/>
                 </viewController>
@@ -24,7 +86,7 @@
             </objects>
             <point key="canvasLocation" x="973.84615384615381" y="-267.29857819905214"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Item-->
         <scene sceneID="cVX-VA-UVr">
             <objects>
                 <viewController id="qV5-ou-1R1" customClass="HomeViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,10 +96,11 @@
                         <viewLayoutGuide key="safeArea" id="CUs-16-djU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Omx-fr-VhY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MM9-Ri-ePd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2080" y="-268.00947867298578"/>
+            <point key="canvasLocation" x="2926.1538461538462" y="-267.29857819905214"/>
         </scene>
         <!--Alarm View Controller-->
         <scene sceneID="Nvq-Eo-bCq">
@@ -52,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWh-kQ-2Hs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3000" y="-266.58767772511845"/>
+            <point key="canvasLocation" x="1997" y="-965"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="hKM-Bx-VcZ">
@@ -67,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arS-os-oFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4069.2307692307691" y="-263.03317535545023"/>
+            <point key="canvasLocation" x="4029.2307692307691" y="-267.29857819905214"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Oc8-fa-bdb">
@@ -91,6 +154,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
