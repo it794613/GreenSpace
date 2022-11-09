@@ -118,7 +118,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="WPL-cG-cFk">
                         <barButtonItem key="leftBarButtonItem" style="done" id="Jfv-mT-u3o">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="oiW-0L-UVW">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="oiW-0L-UVW">
                                 <rect key="frame" x="16" y="5" width="86" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -126,7 +126,7 @@
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" id="X57-zf-nDh">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ts6-mp-iHN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ts6-mp-iHN">
                                 <rect key="frame" x="288" y="5" width="86" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -186,7 +186,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="FNw-NH-SFU" secondAttribute="trailing" constant="15" id="DfI-oz-fh7"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="FNw-NH-SFU" secondAttribute="trailing" id="DfI-oz-fh7"/>
                                                 <constraint firstItem="FNw-NH-SFU" firstAttribute="leading" secondItem="PE1-1k-CN4" secondAttribute="leadingMargin" id="KT8-DZ-xXD"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="FNw-NH-SFU" secondAttribute="bottom" constant="9" id="hn4-4Q-SGU"/>
                                                 <constraint firstItem="FNw-NH-SFU" firstAttribute="top" secondItem="PE1-1k-CN4" secondAttribute="topMargin" constant="9" id="oeP-t6-lTL"/>
