@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1QS-F9-sOE">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -86,17 +86,57 @@
             </objects>
             <point key="canvasLocation" x="973.84615384615381" y="-267.29857819905214"/>
         </scene>
-        <!--Item-->
+        <!--home-->
         <scene sceneID="cVX-VA-UVr">
             <objects>
-                <viewController id="qV5-ou-1R1" customClass="HomeViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qV5-ou-1R1" userLabel="home" customClass="HomeViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8d4-zt-QMc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcr-GJ-8SC">
+                                <rect key="frame" x="16" y="297" width="102" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z5T-Ot-653">
+                                <rect key="frame" x="144" y="297" width="102" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ptJ-TM-ZeJ">
+                                <rect key="frame" x="272" y="297" width="102" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQj-aS-I7x">
+                                <rect key="frame" x="144" y="179" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CUs-16-djU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Omx-fr-VhY"/>
+                    <navigationItem key="navigationItem" id="WPL-cG-cFk">
+                        <barButtonItem key="leftBarButtonItem" style="done" id="Jfv-mT-u3o">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="oiW-0L-UVW">
+                                <rect key="frame" x="16" y="5" width="86" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" id="X57-zf-nDh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ts6-mp-iHN">
+                                <rect key="frame" x="288" y="5" width="86" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="pressAlarmButton:" destination="qV5-ou-1R1" eventType="touchUpInside" id="67p-kO-0dI"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MM9-Ri-ePd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +145,7 @@
         <!--Alarm View Controller-->
         <scene sceneID="Nvq-Eo-bCq">
             <objects>
-                <viewController id="4vR-e2-UxM" customClass="AlarmViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlarmViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4vR-e2-UxM" customClass="AlarmViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6VI-jg-qoz">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,6 +191,7 @@
                             <constraint firstItem="7RJ-Xu-C6L" firstAttribute="trailing" secondItem="yxH-rC-1b3" secondAttribute="trailing" id="dAF-Ld-Ao2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rCg-7l-N2R"/>
                     <connections>
                         <outlet property="alarmTableView" destination="7RJ-Xu-C6L" id="FU0-uA-45t"/>
                     </connections>
@@ -250,7 +291,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arS-os-oFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4029.2307692307691" y="-267.29857819905214"/>
+            <point key="canvasLocation" x="4958.4615384615381" y="-267.29857819905214"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="STM-KF-RFN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1QS-F9-sOE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Omx-fr-VhY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eWd-7T-2KZ">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qV5-ou-1R1" kind="relationship" relationship="rootViewController" id="WGK-zz-Ye8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7y-jm-bEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996.9230769230769" y="-267.29857819905214"/>
         </scene>
     </scenes>
     <resources>

@@ -12,4 +12,13 @@ class HomeViewController: UIViewController{
     override func viewDidLoad(){
         super.viewDidLoad()
     }
+
+    
+    @IBAction func pressAlarmButton(_ sender: Any) {
+        if let pushVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: AlarmViewController.self)){
+            self.navigationController?.pushViewController(pushVC, animated: true)}
+    }
+    
+
+    
 }
