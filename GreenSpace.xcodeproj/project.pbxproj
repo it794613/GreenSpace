@@ -20,6 +20,7 @@
 		0D0475B1291B70C200818C00 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B0291B70C200818C00 /* SettingViewController.swift */; };
 		0D0475B3291B70F400818C00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B2291B70F400818C00 /* HomeViewController.swift */; };
 		0D0475B5291B710800818C00 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B4291B710800818C00 /* AlarmViewController.swift */; };
+		0D0475B7291B860A00818C00 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B6291B860A00818C00 /* AlarmTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		0D0475B0291B70C200818C00 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		0D0475B2291B70F400818C00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0D0475B4291B710800818C00 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		0D0475B6291B860A00818C00 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				0D0475B0291B70C200818C00 /* SettingViewController.swift */,
 				0D0475B2291B70F400818C00 /* HomeViewController.swift */,
 				0D0475B4291B710800818C00 /* AlarmViewController.swift */,
+				0D0475B6291B860A00818C00 /* AlarmTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				0D0475B5291B710800818C00 /* AlarmViewController.swift in Sources */,
 				0D04757B291B6B3800818C00 /* AppDelegate.swift in Sources */,
 				0D04757D291B6B3800818C00 /* SceneDelegate.swift in Sources */,
+				0D0475B7291B860A00818C00 /* AlarmTableViewCell.swift in Sources */,
 				0D0475B1291B70C200818C00 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

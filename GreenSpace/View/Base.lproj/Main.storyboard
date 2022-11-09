@@ -109,13 +109,55 @@
                     <view key="view" contentMode="scaleToFill" id="6VI-jg-qoz">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7RJ-Xu-C6L">
+                                <rect key="frame" x="0.0" y="47" width="390" height="797"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="gOf-L8-Sv4">
+                                    <rect key="frame" x="0.0" y="138" width="390" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더 이상 불러올 정보가 없습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZX-Oo-eRk">
+                                            <rect key="frame" x="119.00000000000001" y="15" width="152.33333333333337" height="14.333333333333336"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="wZX-Oo-eRk" firstAttribute="centerX" secondItem="gOf-L8-Sv4" secondAttribute="centerX" id="WqJ-ik-bGp"/>
+                                        <constraint firstItem="wZX-Oo-eRk" firstAttribute="centerY" secondItem="gOf-L8-Sv4" secondAttribute="centerY" id="XOw-DK-GcZ"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AlarmTableCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="6bx-SE-Ezx" customClass="AlarmTableViewCell" customModule="GreenSpace" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6bx-SE-Ezx" id="PE1-1k-CN4">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="yxH-rC-1b3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7RJ-Xu-C6L" firstAttribute="top" secondItem="yxH-rC-1b3" secondAttribute="top" id="57M-N3-efS"/>
+                            <constraint firstItem="7RJ-Xu-C6L" firstAttribute="leading" secondItem="yxH-rC-1b3" secondAttribute="leading" id="DBy-KL-feD"/>
+                            <constraint firstAttribute="bottom" secondItem="7RJ-Xu-C6L" secondAttribute="bottom" id="Ju5-L9-BIp"/>
+                            <constraint firstItem="7RJ-Xu-C6L" firstAttribute="trailing" secondItem="yxH-rC-1b3" secondAttribute="trailing" id="dAF-Ld-Ao2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alarmTableView" destination="7RJ-Xu-C6L" id="FU0-uA-45t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWh-kQ-2Hs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1997" y="-965"/>
+            <point key="canvasLocation" x="1996.9230769230769" y="-965.40284360189571"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="hKM-Bx-VcZ">
