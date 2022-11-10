@@ -106,12 +106,6 @@
                                 <rect key="frame" x="272" y="297" width="102" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQj-aS-I7x">
-                                <rect key="frame" x="144" y="179" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CUs-16-djU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -130,7 +124,7 @@
                                 <rect key="frame" x="288" y="5" width="86" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="bell.fill" catalog="system"/>
                                 <connections>
                                     <action selector="pressAlarmButton:" destination="qV5-ou-1R1" eventType="touchUpInside" id="67p-kO-0dI"/>
                                 </connections>
@@ -331,6 +325,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bell.fill" catalog="system" width="123" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

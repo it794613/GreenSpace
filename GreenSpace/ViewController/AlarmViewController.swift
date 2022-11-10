@@ -16,7 +16,19 @@ class AlarmViewController: UIViewController{
         self.alarmTableView.dataSource = self
     }
     
+    override func viewWillAppear(){
+        super.viewWillAppear()
+        /// 알람이 있으면 알람 이미지 변경하기 위해 wil appear 사용.
+        
+    }
+    
+    
 }
+
+
+
+
+
 
 //MARK: - 테이블뷰 델리겟
 extension AlarmViewController: UITableViewDelegate{
