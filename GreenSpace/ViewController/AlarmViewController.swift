@@ -16,8 +16,8 @@ class AlarmViewController: UIViewController{
         self.alarmTableView.dataSource = self
     }
     
-    override func viewWillAppear(){
-        super.viewWillAppear()
+    func viewWillAppear(){
+        super.viewWillAppear(true)
         /// 알람이 있으면 알람 이미지 변경하기 위해 wil appear 사용.
         
     }

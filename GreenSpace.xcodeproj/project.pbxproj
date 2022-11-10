@@ -21,6 +21,8 @@
 		0D0475B3291B70F400818C00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B2291B70F400818C00 /* HomeViewController.swift */; };
 		0D0475B5291B710800818C00 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B4291B710800818C00 /* AlarmViewController.swift */; };
 		0D0475B7291B860A00818C00 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B6291B860A00818C00 /* AlarmTableViewCell.swift */; };
+		0D0475BD291CCF1A00818C00 /* MyItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475BC291CCF1A00818C00 /* MyItemViewController.swift */; };
+		0DCD13D0291CD39E00BE3B9B /* BetgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD13CF291CD39E00BE3B9B /* BetgeViewController.swift */; };
 		90ED97F2291BC25600A6B983 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F1291BC25600A6B983 /* User.swift */; };
 		90ED97F4291BC26E00A6B983 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F3291BC26E00A6B983 /* TargetType.swift */; };
 		90ED97F8291BC2B000A6B983 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F7291BC2B000A6B983 /* UserRequest.swift */; };
@@ -66,6 +68,8 @@
 		0D0475B2291B70F400818C00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0D0475B4291B710800818C00 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		0D0475B6291B860A00818C00 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		0D0475BC291CCF1A00818C00 /* MyItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItemViewController.swift; sourceTree = "<group>"; };
+		0DCD13CF291CD39E00BE3B9B /* BetgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetgeViewController.swift; sourceTree = "<group>"; };
 		90ED97F1291BC25600A6B983 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		90ED97F3291BC26E00A6B983 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		90ED97F7291BC2B000A6B983 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
@@ -171,6 +175,8 @@
 				0D0475B2291B70F400818C00 /* HomeViewController.swift */,
 				0D0475B4291B710800818C00 /* AlarmViewController.swift */,
 				0D0475B6291B860A00818C00 /* AlarmTableViewCell.swift */,
+				0D0475BC291CCF1A00818C00 /* MyItemViewController.swift */,
+				0DCD13CF291CD39E00BE3B9B /* BetgeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -387,10 +393,12 @@
 				0D0475B5291B710800818C00 /* AlarmViewController.swift in Sources */,
 				90ED97F4291BC26E00A6B983 /* TargetType.swift in Sources */,
 				0D04757B291B6B3800818C00 /* AppDelegate.swift in Sources */,
+				0DCD13D0291CD39E00BE3B9B /* BetgeViewController.swift in Sources */,
 				90ED97F2291BC25600A6B983 /* User.swift in Sources */,
 				90ED9803291BCAEE00A6B983 /* UserServiceAPI.swift in Sources */,
 				0D04757D291B6B3800818C00 /* SceneDelegate.swift in Sources */,
 				0D0475B7291B860A00818C00 /* AlarmTableViewCell.swift in Sources */,
+				0D0475BD291CCF1A00818C00 /* MyItemViewController.swift in Sources */,
 				90ED97F8291BC2B000A6B983 /* UserRequest.swift in Sources */,
 				0D0475B1291B70C200818C00 /* SettingViewController.swift in Sources */,
 				90ED97FE291BC8D500A6B983 /* UserServiceTarget.swift in Sources */,
