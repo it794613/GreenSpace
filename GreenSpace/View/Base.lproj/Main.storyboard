@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -106,6 +107,15 @@
                                 <rect key="frame" x="272" y="297" width="102" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qc-kR-Z2o">
+                                <rect key="frame" x="158" y="544" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="pressBetge:" destination="qV5-ou-1R1" eventType="touchUpInside" id="lJ9-qA-hkE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CUs-16-djU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -245,25 +255,73 @@
         <!--Betge View Controller-->
         <scene sceneID="1wA-U9-FUQ">
             <objects>
-                <viewController id="TOO-cs-F5F" customClass="BetgeViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BetgeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TOO-cs-F5F" customClass="BetgeViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NgP-8w-PGQ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iy4-qa-P62">
                                 <rect key="frame" x="0.0" y="547" width="390" height="297"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f0o-EP-R3w">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="297"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NdF-zk-jC5">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BetgeCollectionViewCell" id="pek-fn-QuH" customClass="BetgeCollectionViewCell" customModule="GreenSpace" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="plz-nB-2aO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oz5-D3-tln">
+                                                            <rect key="frame" x="5" y="5" width="118" height="118"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="oz5-D3-tln" secondAttribute="trailing" constant="5" id="BcF-YM-ASm"/>
+                                                        <constraint firstItem="oz5-D3-tln" firstAttribute="leading" secondItem="plz-nB-2aO" secondAttribute="leading" constant="5" id="VzL-fz-7Wi"/>
+                                                        <constraint firstItem="oz5-D3-tln" firstAttribute="top" secondItem="plz-nB-2aO" secondAttribute="top" constant="5" id="qmF-KS-K4W"/>
+                                                        <constraint firstAttribute="bottom" secondItem="oz5-D3-tln" secondAttribute="bottom" constant="5" id="w2Q-1V-7Vn"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <connections>
+                                                    <outlet property="betgeImageView" destination="oz5-D3-tln" id="LTc-OA-o9p"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="f0o-EP-R3w" secondAttribute="trailing" id="Q2Q-ez-qhk"/>
+                                    <constraint firstItem="f0o-EP-R3w" firstAttribute="leading" secondItem="iy4-qa-P62" secondAttribute="leading" id="lky-FQ-bd6"/>
+                                    <constraint firstAttribute="bottom" secondItem="f0o-EP-R3w" secondAttribute="bottom" id="sD9-8n-4ih"/>
+                                    <constraint firstItem="f0o-EP-R3w" firstAttribute="top" secondItem="iy4-qa-P62" secondAttribute="bottom" priority="999" identifier="startingConstraint" id="tvS-SE-RGc"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qKJ-4o-rHI"/>
-                        <color key="backgroundColor" white="0.5" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="f0o-EP-R3w" firstAttribute="top" secondItem="qKJ-4o-rHI" secondAttribute="top" constant="500" identifier="finalConstraint" id="6Pf-4I-wJJ"/>
                             <constraint firstItem="iy4-qa-P62" firstAttribute="leading" secondItem="qKJ-4o-rHI" secondAttribute="leading" id="6ma-BR-m3H"/>
                             <constraint firstItem="iy4-qa-P62" firstAttribute="top" secondItem="qKJ-4o-rHI" secondAttribute="top" constant="500" id="ZtK-uX-T4k"/>
                             <constraint firstItem="iy4-qa-P62" firstAttribute="trailing" secondItem="qKJ-4o-rHI" secondAttribute="trailing" id="ggY-RC-vnc"/>
                             <constraint firstAttribute="bottom" secondItem="iy4-qa-P62" secondAttribute="bottom" id="ume-y3-wr0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundContainerView" destination="NgP-8w-PGQ" id="GZ7-M0-Apj"/>
+                        <outlet property="betgeBackgroundView" destination="iy4-qa-P62" id="EqJ-vP-7D5"/>
+                        <outlet property="betgeCollectionView" destination="f0o-EP-R3w" id="iZ7-Oe-f8u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lf8-tg-LZd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -387,8 +445,14 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

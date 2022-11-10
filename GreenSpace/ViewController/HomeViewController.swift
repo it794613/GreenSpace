@@ -19,6 +19,11 @@ class HomeViewController: UIViewController{
             self.navigationController?.pushViewController(pushVC, animated: true)}
     }
     
-
+    @IBAction func pressBetge(_ sender: UIButton) {
+        guard let betgeVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: BetgeViewController.self)) as? BetgeViewController else { return }
+        betgeVC.modalPresentationStyle = .overFullScreen
+        self.present(betgeVC, animated: false, completion: nil)
+    }
+    
     
 }
