@@ -32,6 +32,8 @@ class HomeViewController: UIViewController{
             presentPanModal(betgeVC)
         case myItemModalButton:
             print("item")
+            let myItemVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: MyItemCollectionViewController.self)) as! MyItemCollectionViewController
+            presentPanModal(myItemVC)
         default: break
         }
     }

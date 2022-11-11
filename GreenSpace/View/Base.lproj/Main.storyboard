@@ -234,36 +234,39 @@
             </objects>
             <point key="canvasLocation" x="1996.9230769230769" y="-965.40284360189571"/>
         </scene>
-        <!--My Item View Controller-->
-        <scene sceneID="mcT-1v-Fan">
+        <!--My Item Collection View Controller-->
+        <scene sceneID="Gso-6G-ihJ">
             <objects>
-                <viewController id="idI-zM-um9" customClass="MyItemViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Qv-ub-pPX">
+                <collectionViewController storyboardIdentifier="MyItemCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Beu-1D-Icd" customClass="MyItemCollectionViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="6WT-eg-kch">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKg-rg-7DK">
-                                <rect key="frame" x="0.0" y="547" width="390" height="297"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="s0A-p0-WXs"/>
-                        <color key="backgroundColor" white="0.5" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="KKg-rg-7DK" firstAttribute="trailing" secondItem="s0A-p0-WXs" secondAttribute="trailing" id="9YU-GA-N5c"/>
-                            <constraint firstAttribute="bottom" secondItem="KKg-rg-7DK" secondAttribute="bottom" id="TCC-qT-rxz"/>
-                            <constraint firstItem="KKg-rg-7DK" firstAttribute="top" secondItem="s0A-p0-WXs" secondAttribute="top" constant="500" id="xpD-IB-oat"/>
-                            <constraint firstItem="KKg-rg-7DK" firstAttribute="leading" secondItem="s0A-p0-WXs" secondAttribute="leading" id="zhw-d2-QSJ"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="backgroundView" destination="8Qv-ub-pPX" id="zyQ-eP-7c5"/>
-                        <outlet property="modalView" destination="KKg-rg-7DK" id="6Re-DO-XU4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oUe-ul-5hW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ong-3t-r8n">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uXW-kZ-p17">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OZq-RG-P9n">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Beu-1D-Icd" id="rnk-la-XeC"/>
+                            <outlet property="delegate" destination="Beu-1D-Icd" id="r5i-Wy-stB"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKi-Gq-Qns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2926" y="-965"/>
+            <point key="canvasLocation" x="2999" y="-959"/>
         </scene>
         <!--Betge Collection View Controller-->
         <scene sceneID="Wel-GF-MKK">

@@ -15,6 +15,8 @@ class BetgeCollectionViewController: UICollectionViewController{
         let cellIdentifier = String(describing: BetgeCollectionViewCell.self)
         let nib = UINib(nibName: cellIdentifier, bundle: nil)
         self.collectionView.register(nib, forCellWithReuseIdentifier: cellIdentifier)
+        
+        
     }
     
     
