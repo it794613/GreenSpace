@@ -22,7 +22,9 @@
 		0D0475B5291B710800818C00 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B4291B710800818C00 /* AlarmViewController.swift */; };
 		0D0475B7291B860A00818C00 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475B6291B860A00818C00 /* AlarmTableViewCell.swift */; };
 		0D0475BD291CCF1A00818C00 /* MyItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0475BC291CCF1A00818C00 /* MyItemViewController.swift */; };
-		0DCD13D0291CD39E00BE3B9B /* BetgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD13CF291CD39E00BE3B9B /* BetgeViewController.swift */; };
+		0D3CC9FD291DFE3E000A0CC4 /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = 0D3CC9FC291DFE3E000A0CC4 /* PanModal */; };
+		0D3CC9FF291E05A0000A0CC4 /* BetgeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3CC9FE291E05A0000A0CC4 /* BetgeCollectionViewController.swift */; };
+		0D3CCA01291E0A28000A0CC4 /* BetgeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3CCA00291E0A28000A0CC4 /* BetgeCollectionViewCell.xib */; };
 		0DCD13D2291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */; };
 		90ED97F2291BC25600A6B983 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F1291BC25600A6B983 /* User.swift */; };
 		90ED97F4291BC26E00A6B983 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F3291BC26E00A6B983 /* TargetType.swift */; };
@@ -70,7 +72,8 @@
 		0D0475B4291B710800818C00 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		0D0475B6291B860A00818C00 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
 		0D0475BC291CCF1A00818C00 /* MyItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItemViewController.swift; sourceTree = "<group>"; };
-		0DCD13CF291CD39E00BE3B9B /* BetgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetgeViewController.swift; sourceTree = "<group>"; };
+		0D3CC9FE291E05A0000A0CC4 /* BetgeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetgeCollectionViewController.swift; sourceTree = "<group>"; };
+		0D3CCA00291E0A28000A0CC4 /* BetgeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BetgeCollectionViewCell.xib; sourceTree = "<group>"; };
 		0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetgeCollectionViewCell.swift; sourceTree = "<group>"; };
 		90ED97F1291BC25600A6B983 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		90ED97F3291BC26E00A6B983 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3CC9FD291DFE3E000A0CC4 /* PanModal in Frameworks */,
 				0D0475AF291B6FEA00818C00 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,7 +182,7 @@
 				0D0475B4291B710800818C00 /* AlarmViewController.swift */,
 				0D0475B6291B860A00818C00 /* AlarmTableViewCell.swift */,
 				0D0475BC291CCF1A00818C00 /* MyItemViewController.swift */,
-				0DCD13CF291CD39E00BE3B9B /* BetgeViewController.swift */,
+				0D3CC9FE291E05A0000A0CC4 /* BetgeCollectionViewController.swift */,
 				0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */,
 			);
 			path = ViewController;
@@ -189,6 +193,7 @@
 			children = (
 				0D047580291B6B3800818C00 /* Main.storyboard */,
 				0D047585291B6B3900818C00 /* LaunchScreen.storyboard */,
+				0D3CCA00291E0A28000A0CC4 /* BetgeCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			name = GreenSpace;
 			packageProductDependencies = (
 				0D0475AE291B6FEA00818C00 /* Alamofire */,
+				0D3CC9FC291DFE3E000A0CC4 /* PanModal */,
 			);
 			productName = GreenSpace;
 			productReference = 0D047577291B6B3800818C00 /* GreenSpace.app */;
@@ -347,6 +353,7 @@
 			mainGroup = 0D04756E291B6B3800818C00;
 			packageReferences = (
 				0D0475AD291B6FEA00818C00 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0D3CC9FB291DFE3E000A0CC4 /* XCRemoteSwiftPackageReference "PanModal" */,
 			);
 			productRefGroup = 0D047578291B6B3800818C00 /* Products */;
 			projectDirPath = "";
@@ -366,6 +373,7 @@
 			files = (
 				0D047587291B6B3900818C00 /* LaunchScreen.storyboard in Resources */,
 				0D047584291B6B3900818C00 /* Assets.xcassets in Resources */,
+				0D3CCA01291E0A28000A0CC4 /* BetgeCollectionViewCell.xib in Resources */,
 				0D047582291B6B3800818C00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +405,10 @@
 				0D0475B5291B710800818C00 /* AlarmViewController.swift in Sources */,
 				90ED97F4291BC26E00A6B983 /* TargetType.swift in Sources */,
 				0D04757B291B6B3800818C00 /* AppDelegate.swift in Sources */,
-				0DCD13D0291CD39E00BE3B9B /* BetgeViewController.swift in Sources */,
 				90ED97F2291BC25600A6B983 /* User.swift in Sources */,
 				90ED9803291BCAEE00A6B983 /* UserServiceAPI.swift in Sources */,
 				0D04757D291B6B3800818C00 /* SceneDelegate.swift in Sources */,
+				0D3CC9FF291E05A0000A0CC4 /* BetgeCollectionViewController.swift in Sources */,
 				0D0475B7291B860A00818C00 /* AlarmTableViewCell.swift in Sources */,
 				0D0475BD291CCF1A00818C00 /* MyItemViewController.swift in Sources */,
 				90ED97F8291BC2B000A6B983 /* UserRequest.swift in Sources */,
@@ -754,6 +762,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		0D3CC9FB291DFE3E000A0CC4 /* XCRemoteSwiftPackageReference "PanModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -761,6 +777,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0D0475AD291B6FEA00818C00 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		0D3CC9FC291DFE3E000A0CC4 /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D3CC9FB291DFE3E000A0CC4 /* XCRemoteSwiftPackageReference "PanModal" */;
+			productName = PanModal;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

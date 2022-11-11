@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import PanModal
 
 class HomeViewController: UIViewController{
     
+    @IBOutlet weak var betgeModalButton: UIButton!
+    
+    @IBOutlet weak var myItemModalButton: UIButton!
     override func viewDidLoad(){
         super.viewDidLoad()
     }
@@ -19,10 +23,17 @@ class HomeViewController: UIViewController{
             self.navigationController?.pushViewController(pushVC, animated: true)}
     }
     
-    @IBAction func pressBetge(_ sender: UIButton) {
-        guard let betgeVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: BetgeViewController.self)) as? BetgeViewController else { return }
-        betgeVC.modalPresentationStyle = .overFullScreen
-        self.present(betgeVC, animated: false, completion: nil)
+    
+    @IBAction func pressModalButton(_ sender: UIButton) {
+        switch sender{
+        case betgeModalButton:
+            print("betge")
+            let betgeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: BetgeCollectionViewController.self)) as! BetgeCollectionViewController
+            presentPanModal(betgeVC)
+        case myItemModalButton:
+            print("item")
+        default: break
+        }
     }
     
     
