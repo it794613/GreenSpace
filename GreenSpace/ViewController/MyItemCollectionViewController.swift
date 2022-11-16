@@ -27,6 +27,13 @@ class MyItemCollectionViewController: UICollectionViewController{
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MyItemCollectionViewCell.self), for: indexPath) as! MyItemCollectionViewCell
         
+        //딜리트 버튼이 눌렸을때 작동할 함수 넘겨주기
+        cell.delete = {
+            ///딜리트 버튼이 눌렷을때 작동할것들 함수로 넘겨줌.
+            ///여기에서는 1. db데이터를 지워준다.
+            print("rows = \(indexPath.row)")
+        }
+        
         cell.myItemImageView.image = UIImage(named: "testimg")
         
         return cell
@@ -57,7 +64,7 @@ extension MyItemCollectionViewController{
     func createLayout()->UICollectionViewLayout{
         let layout = UICollectionViewCompositionalLayout{
             (sectionNumber: Int, env: NSCollectionLayoutEnvironment)->NSCollectionLayoutSection? in
-            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/3), heightDimension: .fractionalHeight(0.7))
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(1))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             item.contentInsets = NSDirectionalEdgeInsets(top: 24, leading: 3, bottom: 0, trailing: 3)
             let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1/4))
