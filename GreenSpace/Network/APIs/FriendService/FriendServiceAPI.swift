@@ -11,11 +11,7 @@ import Alamofire
 struct FriendAPI {
     // TODO:  response Auth
     static func getFollowingList(request: FollowingListRequest, completion: @escaping (_ succeed: [Users]?, _ failed: Error?) -> Void) {
-        let headers: HTTPHeaders = [
-            "Authorization": "Bearer \(Auth.shared.access!)",
-            "Content-Type": "application/json"
-        ]
-        AF.request("https://greenspaceapi.herokuapp.com/users/followinglist", method: .get, parameters: nil, headers: headers)
+        AF.request(FriendServiceTarget.followinglist, interceptor: MyRequestInterceptor())
             .validate().responseData { (response) in
                     switch response.result {
                     case .success(let response):
