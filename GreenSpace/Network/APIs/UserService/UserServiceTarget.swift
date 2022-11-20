@@ -16,7 +16,7 @@ enum UserServiceTarget {
 extension UserServiceTarget: TargetType {
 
     var baseURL: String {
-        return "https://www.apiserver.com"
+        return "https://greenspaceapi.herokuapp.com/users"
     }
 
     var method: HTTPMethod {

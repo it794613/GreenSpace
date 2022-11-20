@@ -30,6 +30,7 @@
 		0D3CCA05291E1991000A0CC4 /* MyItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3CCA04291E1991000A0CC4 /* MyItemCollectionViewCell.swift */; };
 		0D828DD12929EBFD000D54BC /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D828DCF2929EBFD000D54BC /* CoreData.xcdatamodeld */; };
 		0DCD13D2291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */; };
+		90CADFA92929EAF00074A363 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CADFA82929EAF00074A363 /* RequestInterceptor.swift */; };
 		90ED97F2291BC25600A6B983 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F1291BC25600A6B983 /* User.swift */; };
 		90ED97F4291BC26E00A6B983 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F3291BC26E00A6B983 /* TargetType.swift */; };
 		90ED97F8291BC2B000A6B983 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F7291BC2B000A6B983 /* UserRequest.swift */; };
@@ -83,6 +84,7 @@
 		0D3CCA04291E1991000A0CC4 /* MyItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		0D828DD02929EBFD000D54BC /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetgeCollectionViewCell.swift; sourceTree = "<group>"; };
+		90CADFA82929EAF00074A363 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
 		90ED97F1291BC25600A6B983 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		90ED97F3291BC26E00A6B983 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		90ED97F7291BC2B000A6B983 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				90ED97F3291BC26E00A6B983 /* TargetType.swift */,
+				90CADFA82929EAF00074A363 /* RequestInterceptor.swift */,
 				90ED97FF291BCA0000A6B983 /* HttpHeaderField.swift */,
 			);
 			path = Bases;
@@ -256,6 +259,7 @@
 		90ED97F5291BC29B00A6B983 /* UserService */ = {
 			isa = PBXGroup;
 			children = (
+				90ED9802291BCAEE00A6B983 /* UserServiceAPI.swift */,
 				90ED97FD291BC8D500A6B983 /* UserServiceTarget.swift */,
 				90ED97F6291BC2A200A6B983 /* Models */,
 			);
@@ -413,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D0475B3291B70F400818C00 /* HomeViewController.swift in Sources */,
+				90CADFA92929EAF00074A363 /* RequestInterceptor.swift in Sources */,
 				0D04757F291B6B3800818C00 /* LoginViewController.swift in Sources */,
 				0DCD13D2291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift in Sources */,
 				0D0475B5291B710800818C00 /* AlarmViewController.swift in Sources */,

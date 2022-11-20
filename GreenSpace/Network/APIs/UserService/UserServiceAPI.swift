@@ -9,7 +9,6 @@ import Foundation
 import Alamofire
 
 struct LoginAPI {
-
     /// 이름과 패스워드로 로그인
     static func login(request: UserRequest, completion: @escaping (_ succeed: User?, _ failed: Error?) -> Void) {
         AF.request(UserServiceTarget.login(request))
