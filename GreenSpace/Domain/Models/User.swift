@@ -8,7 +8,7 @@
 import Foundation
 
 struct User: Decodable {
-    let user_id: Int
+    let nickname: String
     let username: String
     let point: Int
     let open: Bool

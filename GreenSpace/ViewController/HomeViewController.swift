@@ -21,8 +21,6 @@ class HomeViewController: UIViewController{
         LoginAPI.login(request: request) { succeed, failed in
             if succeed != nil {
                 print("success")
-                print(Auth.shared.access!)
-                print(Auth.shared.refresh!)
             }
         }
         

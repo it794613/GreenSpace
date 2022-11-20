@@ -9,11 +9,11 @@ import Foundation
 
 struct FollowingListResponse: Decodable {
     let id: Int
-    let user: User
+    let to_user: User
 }
 
 extension FollowingListResponse {
     var toDomain: [Users] {
-        return [Users(id: id, user: user)]
+        return [Users(id: id, user: to_user)]
     }
 }

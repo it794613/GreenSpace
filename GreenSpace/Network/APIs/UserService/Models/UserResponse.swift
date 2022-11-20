@@ -8,7 +8,7 @@
 import Foundation
 
 struct UserResponse: Decodable {
-    let user_id: Int
+    let nickname: String
     let username: String
     let point: Int
     let open: Bool
@@ -16,6 +16,6 @@ struct UserResponse: Decodable {
 
 extension UserResponse {
     var toDomain: User {
-        return User(user_id: user_id, username: username, point: point, open: open)
+        return User(nickname: nickname, username: username, point: point, open: open)
     }
 }

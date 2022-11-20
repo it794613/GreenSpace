@@ -16,6 +16,7 @@ final class MyRequestInterceptor: RequestInterceptor {
               }
 
         var urlRequest = urlRequest
+        print(accessToken)
         urlRequest.setValue("Bearer " + accessToken, forHTTPHeaderField: "Authorization")
         print("interceptor!")
         completion(.success(urlRequest))
