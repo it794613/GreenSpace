@@ -12,7 +12,7 @@ protocol TargetType: URLRequestConvertible {
     var baseURL: String { get }
     var method: HTTPMethod { get }
     var path: String { get }
-    var parameters: RequestParams { get }
+    var parameters: RequestParams? { get }
 }
 
 extension TargetType {
@@ -32,6 +32,8 @@ extension TargetType {
         case .body(let request):
             let params = request?.toDictionary() ?? [:]
             urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
+        default:
+            print("default")
         }
 
         return urlRequest

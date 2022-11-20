@@ -26,10 +26,6 @@ class AlarmViewController: UIViewController{
 }
 
 
-
-
-
-
 //MARK: - 테이블뷰 델리겟
 extension AlarmViewController: UITableViewDelegate{
     

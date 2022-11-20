@@ -10,14 +10,14 @@ import Alamofire
 
 final class MyRequestInterceptor: RequestInterceptor {
     func adapt(_ urlRequest: URLRequest, for session: Session, completion: @escaping (Result<URLRequest, Error>) -> Void) {
-        guard urlRequest.url?.absoluteString.hasPrefix("https://api.agify.io") == true,
-              let accessToken = KeychainServiceImpl.shared.accessToken else {
+        guard let accessToken = Auth.shared.access else {
                   completion(.success(urlRequest))
                   return
               }
 
         var urlRequest = urlRequest
         urlRequest.setValue("Bearer " + accessToken, forHTTPHeaderField: "Authorization")
+        print("interceptor!")
         completion(.success(urlRequest))
     }
 

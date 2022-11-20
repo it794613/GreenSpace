@@ -15,12 +15,31 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var myItemModalButton: UIButton!
     override func viewDidLoad(){
         super.viewDidLoad()
+        
+        print("heeloo")
+        let request = UserRequest(nickname: "suu", password: "fdsajkl;1")
+        LoginAPI.login(request: request) { succeed, failed in
+            if succeed != nil {
+                print("success")
+                print(Auth.shared.access!)
+                print(Auth.shared.refresh!)
+            }
+        }
+        
     }
 
     
     @IBAction func pressAlarmButton(_ sender: Any) {
-        if let pushVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: AlarmViewController.self)){
-            self.navigationController?.pushViewController(pushVC, animated: true)}
+        let friendRequest = FollowingListRequest()
+        
+        FriendAPI.getFollowingList(request: friendRequest) { succeed1, failed1 in
+            if succeed1 != nil {
+                print(succeed1!)
+            }
+            print(failed1!)
+        }
+//        if let pushVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: AlarmViewController.self)){
+//            self.navigationController?.pushViewController(pushVC, animated: true)}
     }
     
     

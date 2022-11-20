@@ -28,12 +28,12 @@ extension UserServiceTarget: TargetType {
 
     var path: String {
         switch self {
-        case .login: return "/login"
+        case .login: return "/signin/"
         case .getUserDetails: return "/details"
         }
     }
 
-    var parameters: RequestParams {
+    var parameters: RequestParams? {
         switch self {
         case .login(let request): return .body(request)
         case .getUserDetails(let request): return .body(request)

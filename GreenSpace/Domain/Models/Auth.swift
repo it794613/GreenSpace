@@ -7,8 +7,12 @@
 
 import Foundation
 
-struct Auth {
-    let access: String
-    let refresh: String
+class Auth {
+    static let shared = Auth()
+    
+    var access: String?
+    var refresh: String?
+    
+    private init() {}
 }
 
