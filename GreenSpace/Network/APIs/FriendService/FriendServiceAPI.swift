@@ -19,9 +19,7 @@ struct FriendAPI {
                         let sodeul = try? JSONDecoder().decode([FollowingListResponse].self, from: response)
                         debugPrint(sodeul)
                         let jsonString:String = String.init(data: response, encoding: .utf8) ?? "err"
-                        print(jsonString)
-                            
-                        
+                        print(jsonStri ng)
                     case .failure(let error):
                         print(error)
                         completion(nil, error)
