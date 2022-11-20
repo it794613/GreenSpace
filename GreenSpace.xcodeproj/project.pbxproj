@@ -126,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				0D828DCF2929EBFD000D54BC /* CoreData.xcdatamodeld */,
-				90ED9802291BCAEE00A6B983 /* UserServiceAPI.swift */,
 				0D047579291B6B3800818C00 /* GreenSpace */,
 				0D047590291B6B3A00818C00 /* GreenSpaceTests */,
 				0D04759A291B6B3A00818C00 /* GreenSpaceUITests */,
