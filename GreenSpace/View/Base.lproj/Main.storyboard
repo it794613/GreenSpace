@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1QS-F9-sOE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9JK-Cb-uJK">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -324,7 +324,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDV-rE-cVG">
-                                <rect key="frame" x="280" y="232" width="54" height="35"/>
+                                <rect key="frame" x="279.66666666666669" y="232" width="54.333333333333314" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="변경"/>
                                 <connections>
@@ -332,7 +332,7 @@
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wol-Nu-e3R">
-                                <rect key="frame" x="282.66666666666669" y="285" width="51" height="31"/>
+                                <rect key="frame" x="282.33333333333331" y="285" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchSearchPermission:" destination="9JK-Cb-uJK" eventType="valueChanged" id="wUi-hq-QsN"/>
                                 </connections>
@@ -359,8 +359,9 @@
                                     <action selector="pressLogout:" destination="9JK-Cb-uJK" eventType="touchUpInside" id="fmh-Ob-4fR"/>
                                 </connections>
                             </button>
-                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6an-ZX-s3k" userLabel="NickNameTextField">
-                                <rect key="frame" x="142" y="232" width="130" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08H-Zo-wIk">
+                                <rect key="frame" x="137" y="232" width="134" height="34.000000000000028"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -370,26 +371,26 @@
                         <constraints>
                             <constraint firstItem="rUt-z7-mNu" firstAttribute="leading" secondItem="jJG-2u-LgV" secondAttribute="trailing" constant="8" symbolic="YES" id="4jl-zh-4Yl"/>
                             <constraint firstItem="AO4-Du-s7L" firstAttribute="top" secondItem="57I-Ii-4ma" secondAttribute="bottom" constant="30" id="6WH-qT-zyD"/>
-                            <constraint firstItem="6an-ZX-s3k" firstAttribute="centerY" secondItem="rUt-z7-mNu" secondAttribute="centerY" id="9YS-ht-lCJ"/>
+                            <constraint firstItem="08H-Zo-wIk" firstAttribute="centerY" secondItem="jJG-2u-LgV" secondAttribute="centerY" id="BnT-tO-Asa"/>
                             <constraint firstItem="rUt-z7-mNu" firstAttribute="top" secondItem="jJG-2u-LgV" secondAttribute="top" id="Bz8-Wx-M50"/>
                             <constraint firstItem="Zpf-lj-hts" firstAttribute="top" secondItem="AO4-Du-s7L" secondAttribute="bottom" constant="30" id="DHo-vm-6af"/>
                             <constraint firstItem="Zpf-lj-hts" firstAttribute="centerX" secondItem="7hX-xD-844" secondAttribute="centerX" id="G6i-2a-DcC"/>
                             <constraint firstItem="IrQ-gt-s8g" firstAttribute="trailing" secondItem="HDV-rE-cVG" secondAttribute="trailing" constant="56" id="HD9-IY-PrI"/>
                             <constraint firstItem="HDV-rE-cVG" firstAttribute="centerY" secondItem="rUt-z7-mNu" secondAttribute="centerY" id="JO8-36-IbJ"/>
                             <constraint firstItem="Wol-Nu-e3R" firstAttribute="centerY" secondItem="57I-Ii-4ma" secondAttribute="centerY" id="JSR-CI-pfd"/>
-                            <constraint firstItem="6an-ZX-s3k" firstAttribute="leading" secondItem="jJG-2u-LgV" secondAttribute="trailing" id="S8z-nW-RYp"/>
+                            <constraint firstItem="HDV-rE-cVG" firstAttribute="leading" secondItem="08H-Zo-wIk" secondAttribute="trailing" constant="10" id="Pus-5M-JT2"/>
                             <constraint firstItem="57I-Ii-4ma" firstAttribute="top" secondItem="rUt-z7-mNu" secondAttribute="bottom" constant="30" id="Zja-cX-9q8"/>
                             <constraint firstItem="jJG-2u-LgV" firstAttribute="leading" secondItem="IrQ-gt-s8g" secondAttribute="leading" constant="78" id="aM4-3B-1MU"/>
                             <constraint firstItem="jJG-2u-LgV" firstAttribute="top" secondItem="IrQ-gt-s8g" secondAttribute="top" constant="192" id="dQw-GE-R3y"/>
                             <constraint firstItem="57I-Ii-4ma" firstAttribute="centerX" secondItem="7hX-xD-844" secondAttribute="centerX" id="dy6-X5-lcO"/>
-                            <constraint firstItem="HDV-rE-cVG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rUt-z7-mNu" secondAttribute="trailing" constant="91" id="hTD-mF-u6p"/>
                             <constraint firstItem="Wol-Nu-e3R" firstAttribute="centerX" secondItem="HDV-rE-cVG" secondAttribute="centerX" id="ooF-Gu-Xqf"/>
                             <constraint firstItem="AO4-Du-s7L" firstAttribute="centerX" secondItem="7hX-xD-844" secondAttribute="centerX" id="p3d-s6-94J"/>
-                            <constraint firstItem="6an-ZX-s3k" firstAttribute="trailing" secondItem="jJG-2u-LgV" secondAttribute="trailing" id="u6P-p4-HvX"/>
+                            <constraint firstItem="08H-Zo-wIk" firstAttribute="leading" secondItem="jJG-2u-LgV" secondAttribute="trailing" constant="0.33000000000000002" id="zpo-Rl-U2h"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="NickNameTextField" destination="6an-ZX-s3k" id="jXA-jW-JAB"/>
+                        <outlet property="NickNameTextField" destination="08H-Zo-wIk" id="fZa-pu-SSO"/>
+                        <outlet property="userNickName" destination="rUt-z7-mNu" id="V4V-Gc-I4f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arS-os-oFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
