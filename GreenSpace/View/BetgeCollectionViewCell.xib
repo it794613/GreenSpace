@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,15 +17,42 @@
                 <rect key="frame" x="0.0" y="0.0" width="550" height="456"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8lJ-0q-WAB">
-                        <rect key="frame" x="5" y="5" width="540" height="446"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8lJ-0q-WAB">
+                        <rect key="frame" x="5" y="47" width="463" height="404"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNO-jg-4bZ" customClass="CustomView" customModule="GreenSpace" customModuleProvider="target">
+                        <rect key="frame" x="515" y="5" width="30" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2e-B4-JjO">
+                                <rect key="frame" x="-10" y="-2.3333333333333339" width="50" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system"/>
+                                <connections>
+                                    <action selector="pressSelectBetge:" destination="OnB-LC-fju" eventType="touchUpInside" id="YMd-qt-9RE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z2e-B4-JjO" firstAttribute="centerY" secondItem="WNO-jg-4bZ" secondAttribute="centerY" id="3af-nU-SJ1"/>
+                            <constraint firstItem="z2e-B4-JjO" firstAttribute="centerX" secondItem="WNO-jg-4bZ" secondAttribute="centerX" id="U5P-DM-Gqy"/>
+                            <constraint firstAttribute="height" constant="30" id="XFc-75-AE3"/>
+                            <constraint firstAttribute="width" constant="30" id="trb-u5-xJB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="8lJ-0q-WAB" firstAttribute="top" secondItem="AlY-ac-dI9" secondAttribute="top" constant="5" id="6zC-wc-iH0"/>
+                    <constraint firstItem="WNO-jg-4bZ" firstAttribute="top" secondItem="8lJ-0q-WAB" secondAttribute="top" id="Hjo-Tg-vA5"/>
                     <constraint firstAttribute="bottom" secondItem="8lJ-0q-WAB" secondAttribute="bottom" constant="5" id="Szz-vg-FQz"/>
                     <constraint firstItem="8lJ-0q-WAB" firstAttribute="leading" secondItem="AlY-ac-dI9" secondAttribute="leading" constant="5" id="V7d-HW-LpJ"/>
                     <constraint firstAttribute="trailing" secondItem="8lJ-0q-WAB" secondAttribute="trailing" constant="5" id="oo4-N5-aht"/>
+                    <constraint firstItem="WNO-jg-4bZ" firstAttribute="trailing" secondItem="8lJ-0q-WAB" secondAttribute="trailing" id="sFn-C5-ABE"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="550" height="456"/>
@@ -34,4 +62,10 @@
             <point key="canvasLocation" x="98.461538461538453" y="49.763033175355446"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

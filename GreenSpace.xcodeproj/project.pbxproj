@@ -253,13 +253,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		0D828E17292CF7A6000D54BC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		0D828E18292CF7AB000D54BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +261,13 @@
 			sourceTree = "<group>";
 		};
 		0D828E19292CF7AF000D54BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D828E1E292CFA28000D54BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -287,7 +287,7 @@
 		90CADFAB2929F67A0074A363 /* ItemService */ = {
 			isa = PBXGroup;
 			children = (
-				0D828E17292CF7A6000D54BC /* Models */,
+				0D828E1E292CFA28000D54BC /* Models */,
 				90CADFB62929F6DE0074A363 /* ItemServiceAPI.swift */,
 				90CADFB82929F6E50074A363 /* ItemServiceTarget.swift */,
 			);

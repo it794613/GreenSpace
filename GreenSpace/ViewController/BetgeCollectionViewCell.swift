@@ -11,4 +11,10 @@ class BetgeCollectionViewCell: UICollectionViewCell{
     
     @IBOutlet weak var betgeImageView: UIImageView!
     
+    var selectBetge: (()->())={}
+    var imageName = ""
+   
+    @IBAction func pressSelectBetge(_ sender: UIButton) {
+        selectBetge()
+    }
 }

@@ -16,5 +16,6 @@ class GlobalUsers {
 class GlobalImage{
     static var shared: GlobalImage = GlobalImage()
     
-    var imageName: String = ""
+    var myItemImageName: String = ""
+    var betgeImageName: String = ""
 }

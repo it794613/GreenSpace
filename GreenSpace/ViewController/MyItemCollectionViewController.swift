@@ -34,7 +34,7 @@ class MyItemCollectionViewController: UICollectionViewController{
         //딜리트 버튼이 눌렸을때 작동할 함수 넘겨주기
         cell.selectItem = {
             print("rows = \(indexPath.row)")
-            GlobalImage.shared.imageName = cell.imageName
+            GlobalImage.shared.myItemImageName = cell.imageName
         }
         
         

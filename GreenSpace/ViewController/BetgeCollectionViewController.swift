@@ -16,6 +16,9 @@ class BetgeCollectionViewController: UICollectionViewController{
         let nib = UINib(nibName: cellIdentifier, bundle: nil)
         self.collectionView.register(nib, forCellWithReuseIdentifier: cellIdentifier)
         
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.collectionViewLayout = createLayout()
         
     }
     
@@ -27,7 +30,17 @@ extension BetgeCollectionViewController{
         return 5
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: BetgeCollectionViewCell.self), for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: BetgeCollectionViewCell.self), for: indexPath) as! BetgeCollectionViewCell
+        cell.betgeImageView.image = UIImage(named: "testimg")
+        cell.imageName = "testimg"
+        
+        //딜리트 버튼이 눌렸을때 작동할 함수 넘겨주기
+        cell.selectBetge = {
+            print("rows = \(indexPath.row)")
+            GlobalImage.shared.betgeImageName = cell.imageName
+        }
+        
+        
         return cell
     }
 }
@@ -47,7 +60,17 @@ extension BetgeCollectionViewController: PanModalPresentable{
 
 //MARK: - constraintLayout
 extension BetgeCollectionViewController{
-    func createLayout(){
-        
+    func createLayout()->UICollectionViewLayout{
+        let layout = UICollectionViewCompositionalLayout{
+            (sectionNumber: Int, env: NSCollectionLayoutEnvironment)->NSCollectionLayoutSection? in
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(1))
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 24, leading: 3, bottom: 0, trailing: 3)
+            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1/4))
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+            let section = NSCollectionLayoutSection(group: group)
+            return section
+        }
+        return layout
     }
 }

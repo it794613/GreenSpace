@@ -16,9 +16,11 @@ class HomeViewController: UIViewController{
     
     @IBOutlet weak var myItemImageView: UIImageView!
     
+    @IBOutlet weak var betgeImageView: UIImageView!
     
     override func viewWillAppear(_ animated: Bool) {
-        myItemImageView.image = UIImage(named: GlobalImage.shared.imageName)
+        myItemImageView.image = UIImage(named: GlobalImage.shared.myItemImageName)
+        betgeImageView.image = UIImage(named: GlobalImage.shared.betgeImageName)
     }
     
     override func viewDidLoad(){

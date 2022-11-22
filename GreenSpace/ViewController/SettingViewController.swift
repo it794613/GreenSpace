@@ -56,7 +56,6 @@ class SettingViewController: UIViewController{
     
     /// 회원탈퇴 버튼 액션
     @IBAction func pressWithdrawal(_ sender: UIButton) {
-        
     }
     
     
