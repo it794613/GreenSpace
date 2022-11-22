@@ -237,6 +237,27 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0D828E17292CF7A6000D54BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D828E18292CF7AB000D54BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D828E19292CF7AF000D54BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		90CADFAA2929F66A0074A363 /* FriendService */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,7 +271,7 @@
 		90CADFAB2929F67A0074A363 /* ItemService */ = {
 			isa = PBXGroup;
 			children = (
-				90CADFB12929F6AD0074A363 /* Models */,
+				0D828E17292CF7A6000D54BC /* Models */,
 				90CADFB62929F6DE0074A363 /* ItemServiceAPI.swift */,
 				90CADFB82929F6E50074A363 /* ItemServiceTarget.swift */,
 			);
@@ -260,7 +281,7 @@
 		90CADFAC2929F6830074A363 /* ProductService */ = {
 			isa = PBXGroup;
 			children = (
-				90CADFAF2929F6A10074A363 /* Models */,
+				0D828E18292CF7AB000D54BC /* Models */,
 				90CADFBA2929F6F40074A363 /* ProductServiceAPI.swift */,
 				90CADFBC2929F6FC0074A363 /* ProductServiceTarget.swift */,
 			);
@@ -270,25 +291,11 @@
 		90CADFAD2929F68F0074A363 /* PostService */ = {
 			isa = PBXGroup;
 			children = (
-				90CADFAE2929F69B0074A363 /* Models */,
+				0D828E19292CF7AF000D54BC /* Models */,
 				90CADFBE2929F7050074A363 /* PostServiceAPI.swift */,
 				90CADFC02929F70C0074A363 /* PostServieTarget.swift */,
 			);
 			path = PostService;
-			sourceTree = "<group>";
-		};
-		90CADFAE2929F69B0074A363 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		90CADFAF2929F6A10074A363 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		90CADFB02929F6A80074A363 /* Models */ = {
@@ -299,13 +306,6 @@
 				90CADFCD292A001F0074A363 /* FollowingListRequest.swift */,
 				90CADFD3292A02750074A363 /* FollowingListResponse.swift */,
 				90CADFCF292A00290074A363 /* FollowedListRequest.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		90CADFB12929F6AD0074A363 /* Models */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Models;
 			sourceTree = "<group>";
