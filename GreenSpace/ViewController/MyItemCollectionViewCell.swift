@@ -10,11 +10,12 @@ import UIKit
 class MyItemCollectionViewCell: UICollectionViewCell{
     
     //delete button에 작동할 closure
-    var delete: (()->()) = {}
+    var selectItem: (()->()) = {}
     
+    var imageName = ""
     
-    @IBAction func pressDelete(_ sender: UIButton) {
-        delete()
+    @IBAction func pressSelectItemButton(_ sender: Any) {
+            selectItem()
     }
     
     @IBOutlet weak var myItemImageView: UIImageView!

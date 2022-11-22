@@ -32,7 +32,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system"/>
                                 <connections>
-                                    <action selector="pressDelete:" destination="l4Q-XC-e7a" eventType="touchUpInside" id="eA8-rV-ikh"/>
+                                    <action selector="pressSelectItemButton:" destination="l4Q-XC-e7a" eventType="touchUpInside" id="r9R-gv-uKP"/>
                                 </connections>
                             </button>
                         </subviews>

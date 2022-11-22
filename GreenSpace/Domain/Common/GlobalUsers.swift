@@ -12,3 +12,9 @@ class GlobalUsers {
     
     var array: [Users] = []
 }
+
+class GlobalImage{
+    static var shared: GlobalImage = GlobalImage()
+    
+    var imageName: String = ""
+}

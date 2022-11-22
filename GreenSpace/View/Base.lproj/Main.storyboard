@@ -152,6 +152,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="betgeModalButton" destination="7Qc-kR-Z2o" id="g8z-d5-KKS"/>
+                        <outlet property="myItemImageView" destination="ptJ-TM-ZeJ" id="jow-mj-cGs"/>
                         <outlet property="myItemModalButton" destination="Usd-uj-8Mh" id="LPe-qm-Nl1"/>
                     </connections>
                 </viewController>

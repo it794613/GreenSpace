@@ -13,6 +13,14 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var betgeModalButton: UIButton!
     
     @IBOutlet weak var myItemModalButton: UIButton!
+    
+    @IBOutlet weak var myItemImageView: UIImageView!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        myItemImageView.image = UIImage(named: GlobalImage.shared.imageName)
+    }
+    
     override func viewDidLoad(){
         super.viewDidLoad()
         

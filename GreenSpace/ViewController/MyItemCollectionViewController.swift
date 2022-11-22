@@ -8,8 +8,10 @@
 import UIKit
 import PanModal
 
+
 class MyItemCollectionViewController: UICollectionViewController{
 
+    
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -26,15 +28,15 @@ class MyItemCollectionViewController: UICollectionViewController{
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MyItemCollectionViewCell.self), for: indexPath) as! MyItemCollectionViewCell
+        cell.myItemImageView.image = UIImage(named: "testimg")
+        cell.imageName = "testimg"
         
         //딜리트 버튼이 눌렸을때 작동할 함수 넘겨주기
-        cell.delete = {
-            ///딜리트 버튼이 눌렷을때 작동할것들 함수로 넘겨줌.
-            ///여기에서는 1. db데이터를 지워준다.
+        cell.selectItem = {
             print("rows = \(indexPath.row)")
+            GlobalImage.shared.imageName = cell.imageName
         }
         
-        cell.myItemImageView.image = UIImage(named: "testimg")
         
         return cell
     }
