@@ -9,8 +9,11 @@ import Foundation
 import Alamofire
 
 enum UserServiceTarget {
-    case login(UserRequest)
-    case getUserDetails(UserRequest)
+    case signin(SigninRequest)
+    case signup(SignupRequest)
+    case profile                // auth
+    case delete
+    case update(UserRequest)
 }
 
 extension UserServiceTarget: TargetType {
@@ -21,22 +24,31 @@ extension UserServiceTarget: TargetType {
 
     var method: HTTPMethod {
         switch self {
-        case .login: return .post
-        case .getUserDetails: return .get
+        case .signin: return .post
+        case .signup: return .post
+        case .profile: return .get
+        case .delete: return .delete
+        case .update: return .patch
         }
     }
 
     var path: String {
         switch self {
-        case .login: return "/signin/"
-        case .getUserDetails: return "/details"
+        case .signin: return "/signin/"
+        case .signup: return "/signup/"
+        case .profile, .update: return "/profile/"
+        case .delete: return "/delete/"
+            
         }
     }
 
     var parameters: RequestParams? {
         switch self {
-        case .login(let request): return .body(request)
-        case .getUserDetails(let request): return .body(request)
+        case .signin(let request): return .body(request)
+        case .signup(let request): return .body(request)
+        case .profile: return nil
+        case .delete: return nil
+        case .update(let request): return .body(request)
         }
     }
 

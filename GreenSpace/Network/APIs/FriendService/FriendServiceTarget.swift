@@ -10,7 +10,7 @@ import Alamofire
 
 enum FriendServiceTarget {
     case followinglist
-    case followedlist(FollowedListRequest)
+    case followedlist
     case following(FollowingRequest)
 }
 
@@ -31,16 +31,16 @@ extension FriendServiceTarget: TargetType {
     var path: String {
         switch self {
         case .followinglist: return "/followinglist/"
-        case .followedlist: return "/followedlist"
-        case .following: return "/following"
+        case .followedlist: return "/followedlist/"
+        case .following: return "/following/"
         }
     }
     
     var parameters: RequestParams? {
         switch self {
         case .followinglist: return nil
-            case .followedlist: return nil
-            case .following(let request): return .body(request)
+        case .followedlist: return nil
+        case .following(let request): return .body(request)
         }
     }
 

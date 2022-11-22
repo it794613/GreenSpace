@@ -44,13 +44,21 @@
 		90CADFC52929FDDF0074A363 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CADFC42929FDDF0074A363 /* Users.swift */; };
 		90CADFC82929FE510074A363 /* NoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CADFC72929FE510074A363 /* NoResponse.swift */; };
 		90CADFCC2929FED80074A363 /* FollowingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CADFCB2929FED80074A363 /* FollowingRequest.swift */; };
-		90CADFCE292A001F0074A363 /* FollowingListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CADFCD292A001F0074A363 /* FollowingListRequest.swift */; };
 		90CADFD0292A00290074A363 /* FollowedListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CADFCF292A00290074A363 /* FollowedListRequest.swift */; };
 		90CADFD2292A00990074A363 /* FollowingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CADFD1292A00990074A363 /* FollowingResponse.swift */; };
 		90CADFD4292A02750074A363 /* FollowingListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CADFD3292A02750074A363 /* FollowingListResponse.swift */; };
+		90D6AD06292CED7700C1CCEA /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD05292CED7700C1CCEA /* SignupRequest.swift */; };
+		90D6AD08292CEE7800C1CCEA /* SignupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD07292CEE7800C1CCEA /* SignupResponse.swift */; };
+		90D6AD0A292CF32500C1CCEA /* EmptyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD09292CF32500C1CCEA /* EmptyRequest.swift */; };
+		90D6AD0C292CF3F000C1CCEA /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD0B292CF3F000C1CCEA /* EmptyResponse.swift */; };
+		90D6AD0E292CF5E600C1CCEA /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD0D292CF5E600C1CCEA /* UserRequest.swift */; };
+		90D6AD10292CF7E000C1CCEA /* GlobalFollowingUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD0F292CF7E000C1CCEA /* GlobalFollowingUsers.swift */; };
+		90D6AD12292CF7FA00C1CCEA /* GlobalFollwedUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD11292CF7FA00C1CCEA /* GlobalFollwedUsers.swift */; };
+		90D6AD14292CF82D00C1CCEA /* FollowedListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD13292CF82D00C1CCEA /* FollowedListResponse.swift */; };
+		90D6AD16292CF90900C1CCEA /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD15292CF90900C1CCEA /* MessageResponse.swift */; };
 		90ED97F2291BC25600A6B983 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F1291BC25600A6B983 /* User.swift */; };
 		90ED97F4291BC26E00A6B983 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F3291BC26E00A6B983 /* TargetType.swift */; };
-		90ED97F8291BC2B000A6B983 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F7291BC2B000A6B983 /* UserRequest.swift */; };
+		90ED97F8291BC2B000A6B983 /* SigninRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F7291BC2B000A6B983 /* SigninRequest.swift */; };
 		90ED97FA291BC2C600A6B983 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F9291BC2C600A6B983 /* UserResponse.swift */; };
 		90ED97FC291BC75F00A6B983 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97FB291BC75F00A6B983 /* Auth.swift */; };
 		90ED97FE291BC8D500A6B983 /* UserServiceTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97FD291BC8D500A6B983 /* UserServiceTarget.swift */; };
@@ -115,13 +123,21 @@
 		90CADFC42929FDDF0074A363 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		90CADFC72929FE510074A363 /* NoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResponse.swift; sourceTree = "<group>"; };
 		90CADFCB2929FED80074A363 /* FollowingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingRequest.swift; sourceTree = "<group>"; };
-		90CADFCD292A001F0074A363 /* FollowingListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingListRequest.swift; sourceTree = "<group>"; };
 		90CADFCF292A00290074A363 /* FollowedListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedListRequest.swift; sourceTree = "<group>"; };
 		90CADFD1292A00990074A363 /* FollowingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingResponse.swift; sourceTree = "<group>"; };
 		90CADFD3292A02750074A363 /* FollowingListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingListResponse.swift; sourceTree = "<group>"; };
+		90D6AD05292CED7700C1CCEA /* SignupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequest.swift; sourceTree = "<group>"; };
+		90D6AD07292CEE7800C1CCEA /* SignupResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponse.swift; sourceTree = "<group>"; };
+		90D6AD09292CF32500C1CCEA /* EmptyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRequest.swift; sourceTree = "<group>"; };
+		90D6AD0B292CF3F000C1CCEA /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
+		90D6AD0D292CF5E600C1CCEA /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		90D6AD0F292CF7E000C1CCEA /* GlobalFollowingUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFollowingUsers.swift; sourceTree = "<group>"; };
+		90D6AD11292CF7FA00C1CCEA /* GlobalFollwedUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFollwedUsers.swift; sourceTree = "<group>"; };
+		90D6AD13292CF82D00C1CCEA /* FollowedListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedListResponse.swift; sourceTree = "<group>"; };
+		90D6AD15292CF90900C1CCEA /* MessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageResponse.swift; sourceTree = "<group>"; };
 		90ED97F1291BC25600A6B983 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		90ED97F3291BC26E00A6B983 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
-		90ED97F7291BC2B000A6B983 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		90ED97F7291BC2B000A6B983 /* SigninRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRequest.swift; sourceTree = "<group>"; };
 		90ED97F9291BC2C600A6B983 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		90ED97FB291BC75F00A6B983 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		90ED97FD291BC8D500A6B983 /* UserServiceTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTarget.swift; sourceTree = "<group>"; };
@@ -303,8 +319,8 @@
 			children = (
 				90CADFCB2929FED80074A363 /* FollowingRequest.swift */,
 				90CADFD1292A00990074A363 /* FollowingResponse.swift */,
-				90CADFCD292A001F0074A363 /* FollowingListRequest.swift */,
 				90CADFD3292A02750074A363 /* FollowingListResponse.swift */,
+				90D6AD13292CF82D00C1CCEA /* FollowedListResponse.swift */,
 				90CADFCF292A00290074A363 /* FollowedListRequest.swift */,
 			);
 			path = Models;
@@ -314,6 +330,8 @@
 			isa = PBXGroup;
 			children = (
 				90CADFC22929FAF40074A363 /* GlobalUsers.swift */,
+				90D6AD0F292CF7E000C1CCEA /* GlobalFollowingUsers.swift */,
+				90D6AD11292CF7FA00C1CCEA /* GlobalFollwedUsers.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -342,6 +360,9 @@
 				90ED97F3291BC26E00A6B983 /* TargetType.swift */,
 				90CADFA82929EAF00074A363 /* MyRequestInterceptor.swift */,
 				90ED97FF291BCA0000A6B983 /* HttpHeaderField.swift */,
+				90D6AD0B292CF3F000C1CCEA /* EmptyResponse.swift */,
+				90D6AD09292CF32500C1CCEA /* EmptyRequest.swift */,
+				90D6AD15292CF90900C1CCEA /* MessageResponse.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -382,8 +403,11 @@
 		90ED97F6291BC2A200A6B983 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				90ED97F7291BC2B000A6B983 /* UserRequest.swift */,
+				90ED97F7291BC2B000A6B983 /* SigninRequest.swift */,
+				90D6AD05292CED7700C1CCEA /* SignupRequest.swift */,
 				90ED97F9291BC2C600A6B983 /* UserResponse.swift */,
+				90D6AD0D292CF5E600C1CCEA /* UserRequest.swift */,
+				90D6AD07292CEE7800C1CCEA /* SignupResponse.swift */,
 				9046351D292A09C400FB1061 /* LoginResponse.swift */,
 			);
 			path = Models;
@@ -531,18 +555,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D0475B3291B70F400818C00 /* HomeViewController.swift in Sources */,
+				90D6AD16292CF90900C1CCEA /* MessageResponse.swift in Sources */,
 				90CADFB32929F6C00074A363 /* FriendServiceAPI.swift in Sources */,
 				90CADFA92929EAF00074A363 /* MyRequestInterceptor.swift in Sources */,
 				0D04757F291B6B3800818C00 /* LoginViewController.swift in Sources */,
 				0DCD13D2291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift in Sources */,
+				90D6AD10292CF7E000C1CCEA /* GlobalFollowingUsers.swift in Sources */,
 				0D0475B5291B710800818C00 /* AlarmViewController.swift in Sources */,
 				90ED97F4291BC26E00A6B983 /* TargetType.swift in Sources */,
 				0D3B3D9C2924FCE2003FC488 /* CustomView.swift in Sources */,
 				90CADFB72929F6DE0074A363 /* ItemServiceAPI.swift in Sources */,
-				90CADFCE292A001F0074A363 /* FollowingListRequest.swift in Sources */,
 				90CADFC82929FE510074A363 /* NoResponse.swift in Sources */,
 				0D04757B291B6B3800818C00 /* AppDelegate.swift in Sources */,
 				90CADFC12929F70C0074A363 /* PostServieTarget.swift in Sources */,
+				90D6AD06292CED7700C1CCEA /* SignupRequest.swift in Sources */,
 				90ED97F2291BC25600A6B983 /* User.swift in Sources */,
 				90ED9803291BCAEE00A6B983 /* UserServiceAPI.swift in Sources */,
 				0D04757D291B6B3800818C00 /* SceneDelegate.swift in Sources */,
@@ -550,10 +576,14 @@
 				90CADFBD2929F6FC0074A363 /* ProductServiceTarget.swift in Sources */,
 				90CADFD4292A02750074A363 /* FollowingListResponse.swift in Sources */,
 				90CADFB52929F6CA0074A363 /* FriendServiceTarget.swift in Sources */,
+				90D6AD12292CF7FA00C1CCEA /* GlobalFollwedUsers.swift in Sources */,
 				0D3CC9FF291E05A0000A0CC4 /* BetgeCollectionViewController.swift in Sources */,
+				90D6AD0C292CF3F000C1CCEA /* EmptyResponse.swift in Sources */,
 				0D0475B7291B860A00818C00 /* AlarmTableViewCell.swift in Sources */,
+				90D6AD0E292CF5E600C1CCEA /* UserRequest.swift in Sources */,
 				0D0475BD291CCF1A00818C00 /* MyItemCollectionViewController.swift in Sources */,
-				90ED97F8291BC2B000A6B983 /* UserRequest.swift in Sources */,
+				90ED97F8291BC2B000A6B983 /* SigninRequest.swift in Sources */,
+				90D6AD08292CEE7800C1CCEA /* SignupResponse.swift in Sources */,
 				0D0475B1291B70C200818C00 /* SettingViewController.swift in Sources */,
 				90CADFCC2929FED80074A363 /* FollowingRequest.swift in Sources */,
 				90CADFD0292A00290074A363 /* FollowedListRequest.swift in Sources */,
@@ -561,6 +591,7 @@
 				90ED9800291BCA0000A6B983 /* HttpHeaderField.swift in Sources */,
 				90CADFC52929FDDF0074A363 /* Users.swift in Sources */,
 				90ED97FA291BC2C600A6B983 /* UserResponse.swift in Sources */,
+				90D6AD0A292CF32500C1CCEA /* EmptyRequest.swift in Sources */,
 				0D3CCA05291E1991000A0CC4 /* MyItemCollectionViewCell.swift in Sources */,
 				9046351E292A09C400FB1061 /* LoginResponse.swift in Sources */,
 				90CADFBF2929F7050074A363 /* PostServiceAPI.swift in Sources */,
@@ -568,6 +599,7 @@
 				0D828DD12929EBFD000D54BC /* CoreData.xcdatamodeld in Sources */,
 				90CADFC32929FAF40074A363 /* GlobalUsers.swift in Sources */,
 				90CADFB92929F6E50074A363 /* ItemServiceTarget.swift in Sources */,
+				90D6AD14292CF82D00C1CCEA /* FollowedListResponse.swift in Sources */,
 				90CADFD2292A00990074A363 /* FollowingResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,8 +25,8 @@ class HomeViewController: UIViewController{
         super.viewDidLoad()
         
         print("heeloo")
-        let request = UserRequest(nickname: "suu", password: "fdsajkl;1")
-        LoginAPI.login(request: request) { succeed, failed in
+        let request = SigninRequest(nickname: "suu", password: "fdsajkl;1")
+        LoginAPI.signin(request: request) { succeed, failed in
             if succeed != nil {
                 print("success")
             }
@@ -36,11 +36,9 @@ class HomeViewController: UIViewController{
 
     
     @IBAction func pressAlarmButton(_ sender: Any) {
-        let friendRequest = FollowingListRequest()
-        
-        FriendAPI.getFollowingList(request: friendRequest) { succeed1, failed1 in
+        FriendAPI.getFollowingList() { succeed1, failed1 in
             if succeed1 != nil {
-                print(succeed1!)
+                print("hihi : ", succeed1!)
             }
         }
 //        if let pushVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: AlarmViewController.self)){
