@@ -42,7 +42,6 @@ class HomeViewController: UIViewController{
             if succeed1 != nil {
                 print(succeed1!)
             }
-            print(failed1!)
         }
 //        if let pushVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: AlarmViewController.self)){
 //            self.navigationController?.pushViewController(pushVC, animated: true)}

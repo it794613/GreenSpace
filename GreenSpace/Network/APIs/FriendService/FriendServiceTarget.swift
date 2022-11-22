@@ -30,7 +30,7 @@ extension FriendServiceTarget: TargetType {
     
     var path: String {
         switch self {
-        case .followinglist: return "/followinglist"
+        case .followinglist: return "/followinglist/"
         case .followedlist: return "/followedlist"
         case .following: return "/following"
         }

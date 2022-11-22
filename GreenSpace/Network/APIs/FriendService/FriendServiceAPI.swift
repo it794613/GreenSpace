@@ -11,15 +11,12 @@ import Alamofire
 struct FriendAPI {
     // TODO:  response Auth
     static func getFollowingList(request: FollowingListRequest, completion: @escaping (_ succeed: [Users]?, _ failed: Error?) -> Void) {
-        AF.request(FriendServiceTarget.followinglist, interceptor: MyRequestInterceptor())
-            .validate().responseData { (response) in
+//        AF.request(FriendServiceTarget.followinglist, interceptor: MyRequestInterceptor()).responseData { (response) in
+        AF.request(FriendServiceTarget.followinglist, interceptor: MyRequestInterceptor()).responseDecodable(of: [FollowingListResponse].self) { (response) in
                     switch response.result {
                     case .success(let response):
-                        print(response)
-                        let sodeul = try? JSONDecoder().decode([FollowingListResponse].self, from: response)
-                        debugPrint(sodeul)
-                        let jsonString:String = String.init(data: response, encoding: .utf8) ?? "err"
-                        print(jsonString)
+                        response.forEach { $0.toDomain() }
+                        completion(GlobalUsers.shared.array, nil)
                     case .failure(let error):
                         print(error)
                         completion(nil, error)

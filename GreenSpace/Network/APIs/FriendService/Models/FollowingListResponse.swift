@@ -13,7 +13,7 @@ struct FollowingListResponse: Decodable {
 }
 
 extension FollowingListResponse {
-    var toDomain: [Users] {
-        return [Users(id: id, user: to_user)]
+    func toDomain() {
+        GlobalUsers.shared.array.append(Users(id: id, user: to_user))
     }
 }
