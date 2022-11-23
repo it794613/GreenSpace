@@ -29,6 +29,10 @@
 		0D3CCA03291E193F000A0CC4 /* MyItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3CCA02291E193F000A0CC4 /* MyItemCollectionViewCell.xib */; };
 		0D3CCA05291E1991000A0CC4 /* MyItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3CCA04291E1991000A0CC4 /* MyItemCollectionViewCell.swift */; };
 		0D828DD12929EBFD000D54BC /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D828DCF2929EBFD000D54BC /* CoreData.xcdatamodeld */; };
+		0D828E20292E318E000D54BC /* PostServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D828E1F292E318E000D54BC /* PostServiceRequest.swift */; };
+		0D828E22292E319D000D54BC /* PostServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D828E21292E319D000D54BC /* PostServiceResponse.swift */; };
+		0D828E24292E34F3000D54BC /* GlobalPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D828E23292E34F3000D54BC /* GlobalPost.swift */; };
+		0D828E26292E3557000D54BC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D828E25292E3557000D54BC /* Post.swift */; };
 		0DCD13D2291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */; };
 		9046351E292A09C400FB1061 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046351D292A09C400FB1061 /* LoginResponse.swift */; };
 		90CADFA92929EAF00074A363 /* MyRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CADFA82929EAF00074A363 /* MyRequestInterceptor.swift */; };
@@ -126,6 +130,10 @@
 		0D3CCA02291E193F000A0CC4 /* MyItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		0D3CCA04291E1991000A0CC4 /* MyItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		0D828DD02929EBFD000D54BC /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		0D828E1F292E318E000D54BC /* PostServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceRequest.swift; sourceTree = "<group>"; };
+		0D828E21292E319D000D54BC /* PostServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceResponse.swift; sourceTree = "<group>"; };
+		0D828E23292E34F3000D54BC /* GlobalPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPost.swift; sourceTree = "<group>"; };
+		0D828E25292E3557000D54BC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetgeCollectionViewCell.swift; sourceTree = "<group>"; };
 		9046351D292A09C400FB1061 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		90CADFA82929EAF00074A363 /* MyRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequestInterceptor.swift; sourceTree = "<group>"; };
@@ -302,6 +310,8 @@
 		0D828E19292CF7AF000D54BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0D828E1F292E318E000D54BC /* PostServiceRequest.swift */,
+				0D828E21292E319D000D54BC /* PostServiceResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -382,6 +392,7 @@
 				90D6AD2D292E354A00C1CCEA /* GlobalBuy.swift */,
 				90D6AD35292E384900C1CCEA /* GlobalItem.swift */,
 				90D6AD37292E38BA00C1CCEA /* GlobalBadge.swift */,
+				0D828E23292E34F3000D54BC /* GlobalPost.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -440,6 +451,7 @@
 				90ED97FB291BC75F00A6B983 /* Auth.swift */,
 				90D6AD29292E34DE00C1CCEA /* Buy.swift */,
 				90D6AD2B292E34F500C1CCEA /* Item.swift */,
+				0D828E25292E3557000D54BC /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -610,6 +622,7 @@
 			files = (
 				0D0475B3291B70F400818C00 /* HomeViewController.swift in Sources */,
 				90D6AD16292CF90900C1CCEA /* MessageResponse.swift in Sources */,
+				0D828E24292E34F3000D54BC /* GlobalPost.swift in Sources */,
 				90CADFB32929F6C00074A363 /* FriendServiceAPI.swift in Sources */,
 				90CADFA92929EAF00074A363 /* MyRequestInterceptor.swift in Sources */,
 				0D04757F291B6B3800818C00 /* LoginViewController.swift in Sources */,
@@ -635,6 +648,7 @@
 				90D6AD2A292E34DE00C1CCEA /* Buy.swift in Sources */,
 				90CADFBD2929F6FC0074A363 /* ProductServiceTarget.swift in Sources */,
 				90D6AD2E292E354A00C1CCEA /* GlobalBuy.swift in Sources */,
+				0D828E26292E3557000D54BC /* Post.swift in Sources */,
 				90CADFD4292A02750074A363 /* FollowingListResponse.swift in Sources */,
 				90D6AD30292E35B600C1CCEA /* BuyResponse.swift in Sources */,
 				90D6AD1C292E2A5100C1CCEA /* GlobalProducts.swift in Sources */,
@@ -649,6 +663,7 @@
 				90D6AD24292E2C8600C1CCEA /* BookmarkResponse.swift in Sources */,
 				90ED97F8291BC2B000A6B983 /* SigninRequest.swift in Sources */,
 				90D6AD22292E2C2F00C1CCEA /* GlobalBookmark.swift in Sources */,
+				0D828E22292E319D000D54BC /* PostServiceResponse.swift in Sources */,
 				90D6AD08292CEE7800C1CCEA /* SignupResponse.swift in Sources */,
 				90D6AD36292E384900C1CCEA /* GlobalItem.swift in Sources */,
 				0D0475B1291B70C200818C00 /* SettingViewController.swift in Sources */,
@@ -668,6 +683,7 @@
 				0D828DD12929EBFD000D54BC /* CoreData.xcdatamodeld in Sources */,
 				90D6AD1E292E2AC600C1CCEA /* ProductResponse.swift in Sources */,
 				90D6AD28292E34A800C1CCEA /* SpaceRequest.swift in Sources */,
+				0D828E20292E318E000D54BC /* PostServiceRequest.swift in Sources */,
 				90CADFC32929FAF40074A363 /* GlobalUsers.swift in Sources */,
 				90CADFB92929F6E50074A363 /* ItemServiceTarget.swift in Sources */,
 				90D6AD14292CF82D00C1CCEA /* FollowedListResponse.swift in Sources */,
