@@ -9,7 +9,6 @@ import Foundation
 import Alamofire
 
 struct FriendAPI {
-    // TODO:  response Auth
     static func getFollowingList(completion: @escaping (_ succeed: [Users]?, _ failed: Error?) -> Void) {
         AF.request(FriendServiceTarget.followinglist, interceptor: MyRequestInterceptor()).responseDecodable(of: [FollowingListResponse].self) { (response) in
                     switch response.result {
@@ -21,7 +20,6 @@ struct FriendAPI {
                         completion(nil, error)
                     }
                 }
-        
     }
     
     static func getFollowedList(completion: @escaping (_ succeed: [Users]?, _ failed: Error?) -> Void) {
