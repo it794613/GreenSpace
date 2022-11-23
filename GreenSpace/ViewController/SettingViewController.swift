@@ -51,11 +51,22 @@ class SettingViewController: UIViewController{
     
     /// 로그아웃 버튼 액션
     @IBAction func pressLogout(_ sender: UIButton) {
+        self.presentingViewController?.dismiss(animated: true)
+        guard let LoginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
+            LoginViewController.modalTransitionStyle = .crossDissolve
+            LoginViewController.modalPresentationStyle = .fullScreen
+            self.present(LoginViewController, animated: true, completion: nil)
         
     }
     
     /// 회원탈퇴 버튼 액션
     @IBAction func pressWithdrawal(_ sender: UIButton) {
+        self.presentingViewController?.dismiss(animated: true)
+        guard let LoginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
+            LoginViewController.modalTransitionStyle = .crossDissolve
+            LoginViewController.modalPresentationStyle = .fullScreen
+            self.present(LoginViewController, animated: true, completion: nil)
+        
     }
     
     
