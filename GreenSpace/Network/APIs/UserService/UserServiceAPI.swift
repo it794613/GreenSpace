@@ -22,7 +22,7 @@ struct LoginAPI {
     }
     
     static func signup(request: SignupRequest, completion: @escaping (_ succeed: Bool?, _ failed: Error?) -> Void) {
-        AF.request(UserServiceTarget.signup(request), interceptor: MyRequestInterceptor())
+        AF.request(UserServiceTarget.signup(request))
             .responseDecodable { (response: AFDataResponse<SignupResponse>) in
                 switch response.result {
                 case .success:
