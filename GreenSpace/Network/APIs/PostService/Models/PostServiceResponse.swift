@@ -17,6 +17,6 @@ struct PostServiceResponse: Decodable{
 
 extension PostServiceResponse{
     func toDomain() {
-        GlobalPostService.shared.array.append(Post(id: id, image: image, text: text, created_at: created_at, updated_at: updated_at))
+        GlobalPost.shared.array.append(Post(id: id, image: image, text: text, created_at: created_at, updated_at: updated_at))
     }
 }

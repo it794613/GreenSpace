@@ -14,7 +14,7 @@ struct PostServiceAPI{
         AF.request(PostServiceTarget.get, interceptor: MyRequestInterceptor()).responseDecodable(of: [PostServiceResponse].self) { (response) in
                     switch response.result {
                     case .success(let response):
-                        GlobalPostService.shared.array = []
+                        GlobalPost.shared.array = []
                         response.forEach { $0.toDomain() }
                         completion(GlobalPost.shared.array, nil)
                     case .failure(let error):
