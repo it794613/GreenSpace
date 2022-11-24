@@ -14,5 +14,11 @@ class Auth {
     var refresh: String?
     
     private init() {}
+    
+    func clear(){
+        self.access = ""
+        self.refresh = ""
+    }
+    
 }
 

@@ -19,13 +19,21 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var betgeImageView: UIImageView!
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         myItemImageView.image = UIImage(named: GlobalImage.shared.myItemImageName)
         betgeImageView.image = UIImage(named: GlobalImage.shared.betgeImageName)
+        navigationController?.isNavigationBarHidden = true
     }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            navigationController?.isNavigationBarHidden = false
+        }
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        
+
         print("heeloo")
         let request = SigninRequest(nickname: "suu", password: "fdsajkl;1")
         LoginAPI.signin(request: request) { succeed, failed in
@@ -38,13 +46,9 @@ class HomeViewController: UIViewController{
 
     
     @IBAction func pressAlarmButton(_ sender: Any) {
-        FriendAPI.getFollowingList() { succeed1, failed1 in
-            if succeed1 != nil {
-                print("hihi : ", succeed1!)
-            }
-        }
-//        if let pushVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: AlarmViewController.self)){
-//            self.navigationController?.pushViewController(pushVC, animated: true)}
+        
+        if let pushVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: AlarmViewController.self)){
+            self.navigationController?.pushViewController(pushVC, animated: true)}
     }
     
     

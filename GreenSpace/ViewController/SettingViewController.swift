@@ -22,12 +22,21 @@ class SettingViewController: UIViewController{
     }
     
     
+    //로그인뷰 보내는 함수
+    func presentLoginView(){
+        guard let LoginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
+        LoginViewController.modalTransitionStyle = .crossDissolve
+        LoginViewController.modalPresentationStyle = .fullScreen
+        self.present(LoginViewController, animated: true, completion: nil)
+    }
+    
+    
+    
     /// 닉네임 변경하기 위한 버튼 액션
     @IBAction func pressChangeNickName(_ sender: UIButton) {
-        if nickNameTextFiledIsHidden == false{
-            if NickNameTextField.text != ""{
+        if !nickNameTextFiledIsHidden {
+            if NickNameTextField.text != "" {
                 userNickName.text = NickNameTextField.text
-                // usernickname 변화를 서버에 보내줌
             }
         }
         nickNameTextFiledIsHidden.toggle()
@@ -39,12 +48,10 @@ class SettingViewController: UIViewController{
     /// 검색 가능 기능 스위치 액션
     @IBAction func switchSearchPermission(_ sender: UISwitch) {
         //온일때 데이터 보내줘야함.
-        if sender.isOn{
-            
-        }
-        //아닐때 데이터 보내줘야함.
-        else{
-            
+        LoginAPI.update(request: UserRequest(nickname: GlobalUser.shared.nickname, username: GlobalUser.shared.username, point: GlobalUser.shared.point, open: sender.isOn)) { succeed, failed in
+            if let changedUser = succeed{
+                GlobalUser.shared.open = changedUser.open
+            }
         }
     }
     
@@ -52,27 +59,31 @@ class SettingViewController: UIViewController{
     /// 로그아웃 버튼 액션
     @IBAction func pressLogout(_ sender: UIButton) {
         self.presentingViewController?.dismiss(animated: true)
-        guard let LoginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
-            LoginViewController.modalTransitionStyle = .crossDissolve
-            LoginViewController.modalPresentationStyle = .fullScreen
-            self.present(LoginViewController, animated: true, completion: nil)
+    
+        Auth.shared.clear()
+        presentLoginView()
         
     }
     
     /// 회원탈퇴 버튼 액션
     @IBAction func pressWithdrawal(_ sender: UIButton) {
-        self.presentingViewController?.dismiss(animated: true)
-        guard let LoginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
-            LoginViewController.modalTransitionStyle = .crossDissolve
-            LoginViewController.modalPresentationStyle = .fullScreen
-            self.present(LoginViewController, animated: true, completion: nil)
         
+        LoginAPI.delete { succeed, failed in
+            if succeed == true {
+                Auth.shared.clear()
+                self.presentLoginView()
+            } else {
+                //알람창
+                print("deleted")
+                let alert = UIAlertController(title: "에러", message: "네트워크 통신이 원활하지 않습니다.", preferredStyle: UIAlertController.Style.alert)
+                let defaultAlert = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
+                alert.addAction(defaultAlert)
+                self.present(alert, animated: false)
+            }
+        }
     }
-    
-    
-    
-    
 }
+
 
 extension SettingViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -84,5 +95,12 @@ extension SettingViewController: UITextFieldDelegate{
     func textFieldDidEndEditing(_ textField: UITextField) {
         userNickName.text = textField.text
         // usernickname 변화를 서버에 보내줌
+        if let inputNickName = userNickName.text{
+            LoginAPI.update(request: UserRequest(nickname: inputNickName, username: GlobalUser.shared.username, point: GlobalUser.shared.point, open: GlobalUser.shared.open)) { succeed, failed in
+                if let changedUser = succeed{
+                    GlobalUser.shared.nickname = changedUser.nickname
+                }
+            }
+        }
     }
 }

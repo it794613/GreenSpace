@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9JK-Cb-uJK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1QS-F9-sOE">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -31,7 +31,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="패스워드" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRN-H7-wb6">
                                 <rect key="frame" x="70" y="361" width="250" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXM-f2-0kr">
                                 <rect key="frame" x="254" y="419" width="66" height="29"/>
@@ -125,31 +125,30 @@
                                     <action selector="pressModalButton:" destination="qV5-ou-1R1" eventType="touchUpInside" id="fVu-kg-Sbb"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="CUs-16-djU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="WPL-cG-cFk">
-                        <barButtonItem key="leftBarButtonItem" style="done" id="Jfv-mT-u3o">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="oiW-0L-UVW">
-                                <rect key="frame" x="16" y="5" width="86" height="34.333333333333336"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" id="X57-zf-nDh">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ts6-mp-iHN">
-                                <rect key="frame" x="288" y="5" width="86" height="34.333333333333336"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJd-rF-42D">
+                                <rect key="frame" x="313" y="70" width="49" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="bell.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="pressAlarmButton:" destination="qV5-ou-1R1" eventType="touchUpInside" id="67p-kO-0dI"/>
+                                    <action selector="pressAlarmButton:" destination="qV5-ou-1R1" eventType="touchUpInside" id="mis-ED-wJO"/>
                                 </connections>
                             </button>
-                        </barButtonItem>
-                    </navigationItem>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dK-pL-kJ1">
+                                <rect key="frame" x="22" y="70" width="63" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="point"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CUs-16-djU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2dK-pL-kJ1" firstAttribute="leading" secondItem="8d4-zt-QMc" secondAttribute="leading" constant="22" id="BXg-yB-vLi"/>
+                            <constraint firstItem="2dK-pL-kJ1" firstAttribute="top" secondItem="8d4-zt-QMc" secondAttribute="top" constant="70" id="ITn-25-uGN"/>
+                            <constraint firstAttribute="trailing" secondItem="TJd-rF-42D" secondAttribute="trailing" constant="28" id="OXJ-gv-bcD"/>
+                            <constraint firstItem="TJd-rF-42D" firstAttribute="top" secondItem="8d4-zt-QMc" secondAttribute="top" constant="70" id="jSK-Lr-qqz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="home" image="homekit" catalog="system" id="vE8-mc-cHe"/>
                     <connections>
                         <outlet property="betgeImageView" destination="z5T-Ot-653" id="edz-YR-AHm"/>
                         <outlet property="betgeModalButton" destination="7Qc-kR-Z2o" id="g8z-d5-KKS"/>
@@ -159,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MM9-Ri-ePd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2926.1538461538462" y="-267.29857819905214"/>
+            <point key="canvasLocation" x="3855.3846153846152" y="-267.29857819905214"/>
         </scene>
         <!--Alarm View Controller-->
         <scene sceneID="Nvq-Eo-bCq">
@@ -304,7 +303,7 @@
             </objects>
             <point key="canvasLocation" x="4011" y="-965"/>
         </scene>
-        <!--Setting View Controller-->
+        <!--setting-->
         <scene sceneID="hKM-Bx-VcZ">
             <objects>
                 <viewController id="9JK-Cb-uJK" customClass="SettingViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
@@ -313,19 +312,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJG-2u-LgV">
-                                <rect key="frame" x="78" y="239" width="57.666666666666657" height="20.333333333333314"/>
+                                <rect key="frame" x="78" y="283" width="57.666666666666657" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정 검색 허용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57I-Ii-4ma">
-                                <rect key="frame" x="146.66666666666666" y="290" width="97" height="21"/>
+                                <rect key="frame" x="146.66666666666666" y="334" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDV-rE-cVG">
-                                <rect key="frame" x="279.66666666666669" y="232" width="54.333333333333314" height="35"/>
+                                <rect key="frame" x="279.66666666666669" y="276" width="54.333333333333314" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="변경"/>
                                 <connections>
@@ -333,19 +332,19 @@
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wol-Nu-e3R">
-                                <rect key="frame" x="282.33333333333331" y="285" width="51" height="31"/>
+                                <rect key="frame" x="282.33333333333331" y="329" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchSearchPermission:" destination="9JK-Cb-uJK" eventType="valueChanged" id="wUi-hq-QsN"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="빡빡이" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUt-z7-mNu">
-                                <rect key="frame" x="143.66666666666666" y="239" width="45" height="21"/>
+                                <rect key="frame" x="143.66666666666666" y="283" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpf-lj-hts">
-                                <rect key="frame" x="151" y="406" width="88" height="35"/>
+                                <rect key="frame" x="151" y="450" width="88" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="계정 탈퇴"/>
                                 <connections>
@@ -353,7 +352,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO4-Du-s7L">
-                                <rect key="frame" x="153.66666666666666" y="341" width="83" height="35"/>
+                                <rect key="frame" x="153.66666666666666" y="385" width="83" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그아웃"/>
                                 <connections>
@@ -389,6 +388,7 @@
                             <constraint firstItem="08H-Zo-wIk" firstAttribute="leading" secondItem="jJG-2u-LgV" secondAttribute="trailing" constant="0.33000000000000002" id="zpo-Rl-U2h"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="setting" image="seal" catalog="system" id="Wrx-cZ-HyJ"/>
                     <connections>
                         <outlet property="NickNameTextField" destination="08H-Zo-wIk" id="fZa-pu-SSO"/>
                         <outlet property="userNickName" destination="rUt-z7-mNu" id="V4V-Gc-I4f"/>
@@ -396,11 +396,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arS-os-oFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4958.4615384615381" y="-267.29857819905214"/>
+            <point key="canvasLocation" x="5887.6923076923076" y="-267.29857819905214"/>
         </scene>
         <!--Item-->
         <scene sceneID="STM-KF-RFN">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7y-jm-bEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1QS-F9-sOE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Omx-fr-VhY"/>
                     <toolbarItems/>
@@ -410,16 +411,36 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="qV5-ou-1R1" kind="relationship" relationship="rootViewController" id="WGK-zz-Ye8"/>
+                        <segue destination="zgF-4d-MpF" kind="relationship" relationship="rootViewController" id="WGK-zz-Ye8"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j7y-jm-bEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1996.9230769230769" y="-267.29857819905214"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ea6-U4-Zut">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zgF-4d-MpF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cQ5-PX-nYA"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4XT-1T-F0M">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qV5-ou-1R1" kind="relationship" relationship="viewControllers" id="hvI-bp-va2"/>
+                        <segue destination="9JK-Cb-uJK" kind="relationship" relationship="viewControllers" id="EYo-aD-Zmk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mqh-El-mNN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2926.1538461538462" y="-267.29857819905214"/>
         </scene>
     </scenes>
     <resources>
         <image name="bell.fill" catalog="system" width="123" height="128"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="seal" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
