@@ -7,3 +7,8 @@
 
 import Foundation
 
+struct PostRequest : Encodable{
+    let id : Int
+    let image : String
+    let text : String
+}

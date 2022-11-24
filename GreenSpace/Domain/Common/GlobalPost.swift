@@ -7,8 +7,8 @@
 
 import Foundation
 
-class GlobalPostService{
-    static var shared = GlobalPostService()
+class GlobalPost{
+    static var shared = GlobalPost()
     
     var array : [Post] = []
 }
