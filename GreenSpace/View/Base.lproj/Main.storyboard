@@ -154,6 +154,7 @@
                         <outlet property="betgeModalButton" destination="7Qc-kR-Z2o" id="g8z-d5-KKS"/>
                         <outlet property="myItemImageView" destination="ptJ-TM-ZeJ" id="jow-mj-cGs"/>
                         <outlet property="myItemModalButton" destination="Usd-uj-8Mh" id="LPe-qm-Nl1"/>
+                        <outlet property="myPoint" destination="2dK-pL-kJ1" id="nwq-zk-fL7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MM9-Ri-ePd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -401,7 +402,6 @@
         <!--Item-->
         <scene sceneID="STM-KF-RFN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j7y-jm-bEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1QS-F9-sOE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Omx-fr-VhY"/>
                     <toolbarItems/>
@@ -414,6 +414,7 @@
                         <segue destination="zgF-4d-MpF" kind="relationship" relationship="rootViewController" id="WGK-zz-Ye8"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7y-jm-bEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1996.9230769230769" y="-267.29857819905214"/>
         </scene>
@@ -424,6 +425,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="cQ5-PX-nYA"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4XT-1T-F0M">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

@@ -16,10 +16,22 @@ class HomeViewController: UIViewController{
     
     @IBOutlet weak var myItemImageView: UIImageView!
     
+    @IBOutlet weak var myPoint: UIButton!
     @IBOutlet weak var betgeImageView: UIImageView!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        //유저정보 가져와서 포인트 가져옴.
+        LoginAPI.profile { succeed, failed in
+            if let user = succeed{
+                let userPoint = String(user.point) ?? "0"
+                self.myPoint.setTitle(userPoint, for: .normal)
+            }
+        }
+        
+        
+        
         myItemImageView.image = UIImage(named: GlobalImage.shared.myItemImageName)
         betgeImageView.image = UIImage(named: GlobalImage.shared.betgeImageName)
         navigationController?.isNavigationBarHidden = true
