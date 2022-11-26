@@ -20,6 +20,13 @@ class BetgeCollectionViewController: UICollectionViewController{
         collectionView.dataSource = self
         collectionView.collectionViewLayout = createLayout()
         
+        
+        ItemAPI.getBadge { succeed, failed in
+            if let badgeArray = succeed{
+                GlobalBadge.shared.array = badgeArray
+            }
+        }
+        
     }
     
     
@@ -27,19 +34,19 @@ class BetgeCollectionViewController: UICollectionViewController{
 
 extension BetgeCollectionViewController{
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return GlobalBadge.shared.array.count
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: BetgeCollectionViewCell.self), for: indexPath) as! BetgeCollectionViewCell
-        cell.betgeImageView.image = UIImage(named: "testimg")
-        cell.imageName = "testimg"
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MyItemCollectionViewCell.self), for: indexPath) as! BetgeCollectionViewCell
+        let cellData = GlobalBadge.shared.array[indexPath.row]
+        cell.betgeImageView.image = UIImage(named: cellData.image)
+        cell.imageName = cellData.image
         
         //딜리트 버튼이 눌렸을때 작동할 함수 넘겨주기
         cell.selectBetge = {
             print("rows = \(indexPath.row)")
             GlobalImage.shared.betgeImageName = cell.imageName
         }
-        
         
         return cell
     }

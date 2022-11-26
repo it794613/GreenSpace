@@ -16,6 +16,12 @@ class MyItemCollectionViewController: UICollectionViewController{
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        // 아이템 데이터 불러옴.getbut
+        ItemAPI.getBuy { succeed, failed in
+            if let buyArray = succeed{
+                GlobalBuy.shared.array = buyArray
+            }
+        }
         let cellIdentifier = String(describing: MyItemCollectionViewCell.self)
         let nib = UINib(nibName: cellIdentifier, bundle: nil)
         self.collectionView.register(nib, forCellWithReuseIdentifier: cellIdentifier)
@@ -26,10 +32,12 @@ class MyItemCollectionViewController: UICollectionViewController{
         
     }
     
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MyItemCollectionViewCell.self), for: indexPath) as! MyItemCollectionViewCell
-        cell.myItemImageView.image = UIImage(named: "testimg")
-        cell.imageName = "testimg"
+        let cellData = GlobalBuy.shared.array[indexPath.row]
+        cell.myItemImageView.image = UIImage(named: cellData.item.image)
+        cell.imageName = cellData.item.image
         
         //딜리트 버튼이 눌렸을때 작동할 함수 넘겨주기
         cell.selectItem = {
@@ -42,7 +50,7 @@ class MyItemCollectionViewController: UICollectionViewController{
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return GlobalBuy.shared.array.count
     }
 
     

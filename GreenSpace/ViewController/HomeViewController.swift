@@ -66,5 +66,4 @@ class HomeViewController: UIViewController{
         }
     }
     
-    
 }
