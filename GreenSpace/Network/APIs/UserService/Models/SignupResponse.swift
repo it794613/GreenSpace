@@ -8,18 +8,18 @@
 import Foundation
 
 struct _User: Decodable {
-    let userID: Int
-    let lastLogin: Bool
-    let isSuperuser: Bool
-    let username, nickname, createDt: String
-    let userOpen: Bool
+    let user_id: Int
+    let last_login: Bool
+    let is_superuser: Bool
+    let username, nickname, create_dt: String
+    let open: Bool
     let point: Int
-    let isStaff, isActive: Bool
-    let groups, userPermissions: [String?]
+    let is_staff, is_active: Bool
+    let groups, user_permissions: [String?]
 }
 
 struct SignupResponse: Decodable {
-    let _user: _User
+    let user: _User
     let message: String
 }
 

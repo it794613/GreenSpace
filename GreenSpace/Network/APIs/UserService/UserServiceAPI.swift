@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 
 struct LoginAPI {
+    //로그인
     static func signin(request: SigninRequest, completion: @escaping (_ succeed: Auth?, _ failed: Error?) -> Void) {
         AF.request(UserServiceTarget.signin(request))
             .responseDecodable { (response: AFDataResponse<LoginResponse>) in
@@ -21,17 +22,29 @@ struct LoginAPI {
             }
     }
     
+    //회원가입
     static func signup(request: SignupRequest, completion: @escaping (_ succeed: Bool?, _ failed: Error?) -> Void) {
         AF.request(UserServiceTarget.signup(request))
-            .responseDecodable { (response: AFDataResponse<SignupResponse>) in
-                switch response.result {
-                case .success:
-                    completion(true, nil)
-                case .failure(let error):
+            .responseData { (response) in
+                switch response.result{
+                case.success(let response):
+                    completion(true,nil)
+                case.failure(let error):
                     completion(nil, error)
                 }
             }
     }
+//    static func signup(request: SignupRequest, completion: @escaping (_ succeed: Bool?, _ failed: Error?) -> Void) {
+//        AF.request(UserServiceTarget.signup(request))
+//            .responseDecodable { (response: AFDataResponse<SignupResponse>) in
+//                switch response.result {
+//                case .success(let response):
+//                    completion(true, nil)
+//                case .failure(let error):
+//                    completion(nil, error)
+//                }
+//            }
+//    }
     
     static func profile(completion: @escaping (_ succeed: User?, _ failed: Error?) -> Void) {
         AF.request(UserServiceTarget.delete, interceptor: MyRequestInterceptor())

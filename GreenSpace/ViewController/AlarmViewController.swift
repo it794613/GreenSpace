@@ -8,6 +8,9 @@ import UIKit
 
 class AlarmViewController: UIViewController{
     
+    //목업데이터
+    var alarmArray = ["greenteam님이 팔로우하셨습니다.","iamfine_appel님이 팔로우하셨습니다.","jioi._.jin님이 팔로우하셨습니다.","mejin0님이 팔로우하셨습니다.","rkskekzzz님이 팔로우하셨습니다.","nayong님이 팔로우하셨습니다.","hyeunjin님이 팔로우하셨습니다."]
+    
     @IBOutlet weak var alarmTableView: UITableView!
     
     override func viewDidLoad(){
@@ -35,13 +38,14 @@ extension AlarmViewController: UITableViewDelegate{
 //TODO: - 데이터 넣기.
 extension AlarmViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return alarmArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
         let cell = alarmTableView.dequeueReusableCell(withIdentifier: "AlarmTableViewCell") as! AlarmTableViewCell
+        cell.alarmText.text = alarmArray[indexPath.row]
         
         
         return cell

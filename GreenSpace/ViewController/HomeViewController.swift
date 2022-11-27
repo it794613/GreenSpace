@@ -39,28 +39,24 @@ class HomeViewController: UIViewController{
     
     
     override func viewWillDisappear(_ animated: Bool) {
-            super.viewWillDisappear(animated)
-            navigationController?.isNavigationBarHidden = false
-        }
+        super.viewWillDisappear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
     
     override func viewDidLoad(){
         super.viewDidLoad()
-
+        
         print("heeloo")
-        let request = SigninRequest(nickname: "suu", password: "fdsajkl;1")
-        LoginAPI.signin(request: request) { succeed, failed in
-            if succeed != nil {
-                print("success")
-            }
-        }
         
     }
+
 
     
     @IBAction func pressAlarmButton(_ sender: Any) {
         
         if let pushVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: AlarmViewController.self)){
-            self.navigationController?.pushViewController(pushVC, animated: true)}
+            self.navigationController?.pushViewController(pushVC, animated: true)
+        }
     }
     
     
