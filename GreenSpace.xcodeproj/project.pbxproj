@@ -37,6 +37,9 @@
 		0D828E30292F7BAA000D54BC /* PostPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D828E2F292F7BAA000D54BC /* PostPostResponse.swift */; };
 		0D828E32292F8366000D54BC /* GlobalUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D828E31292F8366000D54BC /* GlobalUser.swift */; };
 		0DCD13D2291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */; };
+		4A0627CE2934C3C9009BAEB4 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0627CD2934C3C9009BAEB4 /* FriendViewController.swift */; };
+		4A0627D02934C3F6009BAEB4 /* FriendTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0627CF2934C3F6009BAEB4 /* FriendTableCell.xib */; };
+		4A0627D22934C402009BAEB4 /* FriendTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0627D12934C402009BAEB4 /* FriendTableCell.swift */; };
 		9046351E292A09C400FB1061 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046351D292A09C400FB1061 /* LoginResponse.swift */; };
 		90CADFA92929EAF00074A363 /* MyRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CADFA82929EAF00074A363 /* MyRequestInterceptor.swift */; };
 		90CADFB32929F6C00074A363 /* FriendServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CADFB22929F6C00074A363 /* FriendServiceAPI.swift */; };
@@ -141,6 +144,9 @@
 		0D828E2F292F7BAA000D54BC /* PostPostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPostResponse.swift; sourceTree = "<group>"; };
 		0D828E31292F8366000D54BC /* GlobalUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalUser.swift; sourceTree = "<group>"; };
 		0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetgeCollectionViewCell.swift; sourceTree = "<group>"; };
+		4A0627CD2934C3C9009BAEB4 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		4A0627CF2934C3F6009BAEB4 /* FriendTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendTableCell.xib; sourceTree = "<group>"; };
+		4A0627D12934C402009BAEB4 /* FriendTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableCell.swift; sourceTree = "<group>"; };
 		9046351D292A09C400FB1061 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		90CADFA82929EAF00074A363 /* MyRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequestInterceptor.swift; sourceTree = "<group>"; };
 		90CADFB22929F6C00074A363 /* FriendServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendServiceAPI.swift; sourceTree = "<group>"; };
@@ -288,6 +294,8 @@
 				0D3CC9FE291E05A0000A0CC4 /* BetgeCollectionViewController.swift */,
 				0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */,
 				0D3B3D9B2924FCE2003FC488 /* CustomView.swift */,
+				4A0627CD2934C3C9009BAEB4 /* FriendViewController.swift */,
+				4A0627D12934C402009BAEB4 /* FriendTableCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -299,6 +307,7 @@
 				0D3CCA02291E193F000A0CC4 /* MyItemCollectionViewCell.xib */,
 				0D047585291B6B3900818C00 /* LaunchScreen.storyboard */,
 				0D3CCA00291E0A28000A0CC4 /* BetgeCollectionViewCell.xib */,
+				4A0627CF2934C3F6009BAEB4 /* FriendTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -604,6 +613,7 @@
 				0D047584291B6B3900818C00 /* Assets.xcassets in Resources */,
 				0D3CCA01291E0A28000A0CC4 /* BetgeCollectionViewCell.xib in Resources */,
 				0D047582291B6B3800818C00 /* Main.storyboard in Resources */,
+				4A0627D02934C3F6009BAEB4 /* FriendTableCell.xib in Resources */,
 				0D3CCA03291E193F000A0CC4 /* MyItemCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,6 +699,7 @@
 				90D6AD0A292CF32500C1CCEA /* EmptyRequest.swift in Sources */,
 				0D3CCA05291E1991000A0CC4 /* MyItemCollectionViewCell.swift in Sources */,
 				0D828E32292F8366000D54BC /* GlobalUser.swift in Sources */,
+				4A0627CE2934C3C9009BAEB4 /* FriendViewController.swift in Sources */,
 				9046351E292A09C400FB1061 /* LoginResponse.swift in Sources */,
 				90CADFBF2929F7050074A363 /* PostServiceAPI.swift in Sources */,
 				90ED97FC291BC75F00A6B983 /* Auth.swift in Sources */,
@@ -700,6 +711,7 @@
 				90CADFB92929F6E50074A363 /* ItemServiceTarget.swift in Sources */,
 				90D6AD14292CF82D00C1CCEA /* FollowedListResponse.swift in Sources */,
 				90CADFD2292A00990074A363 /* FollowingResponse.swift in Sources */,
+				4A0627D22934C402009BAEB4 /* FriendTableCell.swift in Sources */,
 				90D6AD18292E28D600C1CCEA /* BookmarkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
