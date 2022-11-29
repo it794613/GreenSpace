@@ -94,7 +94,6 @@
 		90ED9803291BCAEE00A6B983 /* UserServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9802291BCAEE00A6B983 /* UserServiceAPI.swift */; };
 		C0332FCC29360210001B9BE4 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0332FCB29360210001B9BE4 /* ProductViewController.swift */; };
 		C0332FCE2936021F001B9BE4 /* ProductTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0332FCD2936021F001B9BE4 /* ProductTableCell.swift */; };
-		C0FBE2A8293602B700F87930 /* ProductTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FBE2A7293602B700F87930 /* ProductTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,7 +203,7 @@
 		90ED9802291BCAEE00A6B983 /* UserServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceAPI.swift; sourceTree = "<group>"; };
 		C0332FCB29360210001B9BE4 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		C0332FCD2936021F001B9BE4 /* ProductTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableCell.swift; sourceTree = "<group>"; };
-		C0FBE2A7293602B700F87930 /* ProductTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductTableCell.xib; path = "../../../../Downloads/GreenSpace 2/GreenSpace/controller/ProductTableCell.xib"; sourceTree = "<group>"; };
+		C0FBE2A92936031200F87930 /* ProductTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProductTableCell.xib; path = GreenSpace/ViewController/ProductTableCell.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,7 +315,7 @@
 				0D047585291B6B3900818C00 /* LaunchScreen.storyboard */,
 				0D3CCA00291E0A28000A0CC4 /* BetgeCollectionViewCell.xib */,
 				4A0627CF2934C3F6009BAEB4 /* FriendTableCell.xib */,
-				C0FBE2A7293602B700F87930 /* ProductTableCell.xib */,
+				C0FBE2A92936031200F87930 /* ProductTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -622,7 +621,6 @@
 				0D047584291B6B3900818C00 /* Assets.xcassets in Resources */,
 				0D3CCA01291E0A28000A0CC4 /* BetgeCollectionViewCell.xib in Resources */,
 				0D047582291B6B3800818C00 /* Main.storyboard in Resources */,
-				C0FBE2A8293602B700F87930 /* ProductTableCell.xib in Resources */,
 				4A0627D02934C3F6009BAEB4 /* FriendTableCell.xib in Resources */,
 				0D3CCA03291E193F000A0CC4 /* MyItemCollectionViewCell.xib in Resources */,
 			);
