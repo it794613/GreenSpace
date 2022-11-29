@@ -460,8 +460,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="0Fb-87-wbL" kind="relationship" relationship="viewControllers" id="49x-gZ-sdf"/>
                         <segue destination="qV5-ou-1R1" kind="relationship" relationship="viewControllers" id="hvI-bp-va2"/>
+                        <segue destination="0Fb-87-wbL" kind="relationship" relationship="viewControllers" id="49x-gZ-sdf"/>
                         <segue destination="9JK-Cb-uJK" kind="relationship" relationship="viewControllers" id="EYo-aD-Zmk"/>
                     </connections>
                 </tabBarController>
@@ -510,7 +510,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="AllFriend"/>
-                                    <segment title="Follow"/>
+                                    <segment title="Search"/>
                                 </segments>
                                 <connections>
                                     <action selector="toggleBtn:" destination="0Fb-87-wbL" eventType="valueChanged" id="kwK-vP-3cl"/>
