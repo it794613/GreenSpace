@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductTableCell" id="X7G-Ku-SfG" customClass="ProductTableCell" customModule="GreenSpace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X7G-Ku-SfG" id="Qtz-Au-qQG">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nv9-jl-ukg">
+                        <rect key="frame" x="13" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmA-fX-1LL">
+                        <rect key="frame" x="329" y="7" width="48" height="30"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="false"/>
+                        <connections>
+                            <action selector="pressBookMark:" destination="X7G-Ku-SfG" eventType="touchUpInside" id="mGv-P7-PXT"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="AmA-fX-1LL" secondAttribute="bottom" constant="7" id="3aM-me-L8F"/>
+                    <constraint firstAttribute="bottom" secondItem="Nv9-jl-ukg" secondAttribute="bottom" constant="11" id="QHV-Uu-kkU"/>
+                    <constraint firstItem="Nv9-jl-ukg" firstAttribute="leading" secondItem="Qtz-Au-qQG" secondAttribute="leading" constant="13" id="Tdm-NJ-2vg"/>
+                    <constraint firstItem="AmA-fX-1LL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Nv9-jl-ukg" secondAttribute="trailing" constant="20" id="VAf-dU-V6x"/>
+                    <constraint firstItem="AmA-fX-1LL" firstAttribute="top" secondItem="Qtz-Au-qQG" secondAttribute="top" constant="7" id="YTH-ze-bmu"/>
+                    <constraint firstAttribute="trailing" secondItem="AmA-fX-1LL" secondAttribute="trailing" constant="13" id="gAR-31-nxP"/>
+                    <constraint firstItem="Nv9-jl-ukg" firstAttribute="top" secondItem="Qtz-Au-qQG" secondAttribute="top" constant="12" id="sRD-6c-y8f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ProductName" destination="Nv9-jl-ukg" id="kjl-zA-gyq"/>
+                <outlet property="bookMark" destination="AmA-fX-1LL" id="oO4-ET-4w3"/>
+            </connections>
+            <point key="canvasLocation" x="-75" y="-42"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="false" width="24" height="24"/>
+    </resources>
+</document>
