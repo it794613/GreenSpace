@@ -47,7 +47,7 @@ struct LoginAPI {
 //    }
     
     static func profile(completion: @escaping (_ succeed: User?, _ failed: Error?) -> Void) {
-        AF.request(UserServiceTarget.delete, interceptor: MyRequestInterceptor())
+        AF.request(UserServiceTarget.profile, interceptor: MyRequestInterceptor())
             .responseDecodable { (response: AFDataResponse<UserResponse>) in
                 switch response.result {
                 case .success(let response):
@@ -60,7 +60,7 @@ struct LoginAPI {
     
     
     static func delete(completion: @escaping (_ succeed: Bool?, _ failed: Error?) -> Void) {
-        AF.request(UserServiceTarget.profile, interceptor: MyRequestInterceptor())
+        AF.request(UserServiceTarget.delete, interceptor: MyRequestInterceptor())
             .responseDecodable { (response: AFDataResponse<EmptyResponse>) in
                 switch response.result {
                 case .success(let response):

@@ -105,34 +105,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcr-GJ-8SC" userLabel="characterImageView">
-                                <rect key="frame" x="16" y="297" width="102" height="207"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z5T-Ot-653" userLabel="betgeImageView">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xcr-GJ-8SC" userLabel="characterImageView">
                                 <rect key="frame" x="144" y="297" width="102" height="207"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="207" id="5fT-fe-HnC"/>
+                                    <constraint firstAttribute="width" constant="102" id="i9F-vG-ECq"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ptJ-TM-ZeJ" userLabel="itemImageView">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z5T-Ot-653" userLabel="betgeImageView">
+                                <rect key="frame" x="16" y="404" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="edl-IE-6Tt"/>
+                                    <constraint firstAttribute="width" constant="100" id="zLe-zv-wW6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ptJ-TM-ZeJ" userLabel="itemImageView">
                                 <rect key="frame" x="272" y="297" width="102" height="207"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="207" id="5ov-fh-ch9"/>
+                                    <constraint firstAttribute="width" constant="102" id="7ft-oe-Z0Y"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qc-kR-Z2o">
-                                <rect key="frame" x="158" y="544" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qc-kR-Z2o">
+                                <rect key="frame" x="22" y="544" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="pressModalButton:" destination="qV5-ou-1R1" eventType="touchUpInside" id="Jl1-SE-nfT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usd-uj-8Mh">
-                                <rect key="frame" x="272" y="544" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="pressModalButton:" destination="qV5-ou-1R1" eventType="touchUpInside" id="fVu-kg-Sbb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJd-rF-42D">
@@ -148,20 +147,41 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="point"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usd-uj-8Mh">
+                                <rect key="frame" x="285.66666666666669" y="544" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="pressModalButton:" destination="qV5-ou-1R1" eventType="touchUpInside" id="fVu-kg-Sbb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CUs-16-djU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ptJ-TM-ZeJ" firstAttribute="bottom" secondItem="xcr-GJ-8SC" secondAttribute="bottom" id="59O-jE-Chy"/>
                             <constraint firstItem="2dK-pL-kJ1" firstAttribute="leading" secondItem="8d4-zt-QMc" secondAttribute="leading" constant="22" id="BXg-yB-vLi"/>
+                            <constraint firstItem="7Qc-kR-Z2o" firstAttribute="centerX" secondItem="z5T-Ot-653" secondAttribute="centerX" id="GVe-7V-CGA"/>
+                            <constraint firstItem="7Qc-kR-Z2o" firstAttribute="top" secondItem="z5T-Ot-653" secondAttribute="bottom" constant="40" id="GgI-Tu-OaV"/>
+                            <constraint firstItem="z5T-Ot-653" firstAttribute="leading" secondItem="7Qc-kR-Z2o" secondAttribute="trailing" constant="-81" id="GtZ-Ab-5tR"/>
+                            <constraint firstItem="z5T-Ot-653" firstAttribute="bottom" secondItem="xcr-GJ-8SC" secondAttribute="bottom" id="ILX-uk-MSr"/>
                             <constraint firstItem="2dK-pL-kJ1" firstAttribute="top" secondItem="8d4-zt-QMc" secondAttribute="top" constant="70" id="ITn-25-uGN"/>
+                            <constraint firstItem="xcr-GJ-8SC" firstAttribute="leading" secondItem="z5T-Ot-653" secondAttribute="trailing" constant="28" id="NYt-fb-mBw"/>
                             <constraint firstAttribute="trailing" secondItem="TJd-rF-42D" secondAttribute="trailing" constant="28" id="OXJ-gv-bcD"/>
+                            <constraint firstItem="Usd-uj-8Mh" firstAttribute="centerX" secondItem="ptJ-TM-ZeJ" secondAttribute="centerX" id="Zwg-QI-IfV"/>
                             <constraint firstItem="TJd-rF-42D" firstAttribute="top" secondItem="8d4-zt-QMc" secondAttribute="top" constant="70" id="jSK-Lr-qqz"/>
+                            <constraint firstItem="xcr-GJ-8SC" firstAttribute="centerX" secondItem="8d4-zt-QMc" secondAttribute="centerX" id="mGV-de-Q3v"/>
+                            <constraint firstItem="xcr-GJ-8SC" firstAttribute="top" secondItem="ptJ-TM-ZeJ" secondAttribute="bottom" constant="-207" id="tSc-JR-yjV"/>
+                            <constraint firstItem="ptJ-TM-ZeJ" firstAttribute="leading" secondItem="xcr-GJ-8SC" secondAttribute="trailing" constant="26" id="ufE-qe-tCe"/>
+                            <constraint firstItem="xcr-GJ-8SC" firstAttribute="top" secondItem="CUs-16-djU" secondAttribute="top" constant="206" id="vc5-Tp-d9E"/>
+                            <constraint firstItem="Usd-uj-8Mh" firstAttribute="top" secondItem="ptJ-TM-ZeJ" secondAttribute="bottom" constant="40" id="yat-M2-51R"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="home" image="homekit" catalog="system" id="vE8-mc-cHe"/>
                     <connections>
                         <outlet property="betgeImageView" destination="z5T-Ot-653" id="edz-YR-AHm"/>
                         <outlet property="betgeModalButton" destination="7Qc-kR-Z2o" id="g8z-d5-KKS"/>
+                        <outlet property="characterImageView" destination="xcr-GJ-8SC" id="vde-Jv-VLH"/>
                         <outlet property="myItemImageView" destination="ptJ-TM-ZeJ" id="jow-mj-cGs"/>
                         <outlet property="myItemModalButton" destination="Usd-uj-8Mh" id="LPe-qm-Nl1"/>
                         <outlet property="myPoint" destination="2dK-pL-kJ1" id="nwq-zk-fL7"/>
@@ -354,16 +374,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpf-lj-hts">
-                                <rect key="frame" x="151" y="450" width="88" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="계정 탈퇴"/>
-                                <connections>
-                                    <action selector="pressWithdrawal:" destination="9JK-Cb-uJK" eventType="touchUpInside" id="2dA-7z-1eB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO4-Du-s7L">
-                                <rect key="frame" x="153.66666666666666" y="385" width="83" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO4-Du-s7L">
+                                <rect key="frame" x="154" y="444" width="83" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그아웃"/>
                                 <connections>
@@ -376,6 +388,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpf-lj-hts">
+                                <rect key="frame" x="154" y="385" width="88" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="계정 탈퇴"/>
+                                <connections>
+                                    <action selector="pressWithdrawal:" destination="9JK-Cb-uJK" eventType="touchUpInside" id="2dA-7z-1eB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IrQ-gt-s8g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
