@@ -90,6 +90,7 @@
 		90D6AD36292E384900C1CCEA /* GlobalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD35292E384900C1CCEA /* GlobalItem.swift */; };
 		90D6AD38292E38BA00C1CCEA /* GlobalBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD37292E38BA00C1CCEA /* GlobalBadge.swift */; };
 		90D6AD3A292E38E300C1CCEA /* BadgeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D6AD39292E38E300C1CCEA /* BadgeResponse.swift */; };
+		90D6AD3E293604E100C1CCEA /* ProductTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90D6AD3D293604E100C1CCEA /* ProductTableCell.xib */; };
 		90ED97F2291BC25600A6B983 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F1291BC25600A6B983 /* User.swift */; };
 		90ED97F4291BC26E00A6B983 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F3291BC26E00A6B983 /* TargetType.swift */; };
 		90ED97F8291BC2B000A6B983 /* SigninRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97F7291BC2B000A6B983 /* SigninRequest.swift */; };
@@ -98,6 +99,8 @@
 		90ED97FE291BC8D500A6B983 /* UserServiceTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97FD291BC8D500A6B983 /* UserServiceTarget.swift */; };
 		90ED9800291BCA0000A6B983 /* HttpHeaderField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED97FF291BCA0000A6B983 /* HttpHeaderField.swift */; };
 		90ED9803291BCAEE00A6B983 /* UserServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ED9802291BCAEE00A6B983 /* UserServiceAPI.swift */; };
+		C0332FCC29360210001B9BE4 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0332FCB29360210001B9BE4 /* ProductViewController.swift */; };
+		C0332FCE2936021F001B9BE4 /* ProductTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0332FCD2936021F001B9BE4 /* ProductTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +205,7 @@
 		90D6AD35292E384900C1CCEA /* GlobalItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalItem.swift; sourceTree = "<group>"; };
 		90D6AD37292E38BA00C1CCEA /* GlobalBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalBadge.swift; sourceTree = "<group>"; };
 		90D6AD39292E38E300C1CCEA /* BadgeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeResponse.swift; sourceTree = "<group>"; };
+		90D6AD3D293604E100C1CCEA /* ProductTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableCell.xib; sourceTree = "<group>"; };
 		90ED97F1291BC25600A6B983 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		90ED97F3291BC26E00A6B983 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		90ED97F7291BC2B000A6B983 /* SigninRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRequest.swift; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 		90ED97FD291BC8D500A6B983 /* UserServiceTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTarget.swift; sourceTree = "<group>"; };
 		90ED97FF291BCA0000A6B983 /* HttpHeaderField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeaderField.swift; sourceTree = "<group>"; };
 		90ED9802291BCAEE00A6B983 /* UserServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceAPI.swift; sourceTree = "<group>"; };
+		C0332FCB29360210001B9BE4 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		C0332FCD2936021F001B9BE4 /* ProductTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +316,8 @@
 				0D3B3D9B2924FCE2003FC488 /* CustomView.swift */,
 				4A0627CD2934C3C9009BAEB4 /* FriendViewController.swift */,
 				4A0627D12934C402009BAEB4 /* FriendTableCell.swift */,
+				C0332FCD2936021F001B9BE4 /* ProductTableCell.swift */,
+				C0332FCB29360210001B9BE4 /* ProductViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -324,6 +332,7 @@
 				41F381F52935FF2D00DB4DB0 /* PostingCustomCollectionViewCell.xib */,
 				41F381F72935FF3500DB4DB0 /* Posting.storyboard */,
 				4A0627CF2934C3F6009BAEB4 /* FriendTableCell.xib */,
+				90D6AD3D293604E100C1CCEA /* ProductTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -633,6 +642,7 @@
 				0D3CCA01291E0A28000A0CC4 /* BetgeCollectionViewCell.xib in Resources */,
 				41F381F82935FF3500DB4DB0 /* Posting.storyboard in Resources */,
 				0D047582291B6B3800818C00 /* Main.storyboard in Resources */,
+				90D6AD3E293604E100C1CCEA /* ProductTableCell.xib in Resources */,
 				4A0627D02934C3F6009BAEB4 /* FriendTableCell.xib in Resources */,
 				41F381F62935FF2D00DB4DB0 /* PostingCustomCollectionViewCell.xib in Resources */,
 				0D3CCA03291E193F000A0CC4 /* MyItemCollectionViewCell.xib in Resources */,
@@ -663,6 +673,7 @@
 				0D0475B3291B70F400818C00 /* HomeViewController.swift in Sources */,
 				90D6AD16292CF90900C1CCEA /* MessageResponse.swift in Sources */,
 				0D828E24292E34F3000D54BC /* GlobalPost.swift in Sources */,
+				C0332FCC29360210001B9BE4 /* ProductViewController.swift in Sources */,
 				90CADFB32929F6C00074A363 /* FriendServiceAPI.swift in Sources */,
 				90CADFA92929EAF00074A363 /* MyRequestInterceptor.swift in Sources */,
 				0D04757F291B6B3800818C00 /* LoginViewController.swift in Sources */,
@@ -671,6 +682,7 @@
 				90D6AD1A292E2A0500C1CCEA /* Product.swift in Sources */,
 				90D6AD10292CF7E000C1CCEA /* GlobalFollowingUsers.swift in Sources */,
 				0D0475B5291B710800818C00 /* AlarmViewController.swift in Sources */,
+				C0332FCE2936021F001B9BE4 /* ProductTableCell.swift in Sources */,
 				90ED97F4291BC26E00A6B983 /* TargetType.swift in Sources */,
 				0D3B3D9C2924FCE2003FC488 /* CustomView.swift in Sources */,
 				90CADFB72929F6DE0074A363 /* ItemServiceAPI.swift in Sources */,
