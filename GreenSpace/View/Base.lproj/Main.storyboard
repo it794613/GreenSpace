@@ -407,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arS-os-oFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5887.6923076923076" y="-267.29857819905214"/>
+            <point key="canvasLocation" x="4985" y="-267"/>
         </scene>
         <!--Item-->
         <scene sceneID="STM-KF-RFN">
@@ -443,6 +443,7 @@
                         <segue destination="0Fb-87-wbL" kind="relationship" relationship="viewControllers" id="49x-gZ-sdf"/>
                         <segue destination="qV5-ou-1R1" kind="relationship" relationship="viewControllers" id="hvI-bp-va2"/>
                         <segue destination="9JK-Cb-uJK" kind="relationship" relationship="viewControllers" id="EYo-aD-Zmk"/>
+                        <segue destination="uTA-AA-cp4" kind="relationship" relationship="viewControllers" id="G0k-pf-Q8S"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqh-El-mNN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -509,11 +510,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZc-wO-X7N" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4491" y="455"/>
+            <point key="canvasLocation" x="3855" y="505"/>
+        </scene>
+        <!--ProductViewController-->
+        <scene sceneID="pI7-zW-nZx">
+            <objects>
+                <viewController id="uTA-AA-cp4" userLabel="ProductViewController" customClass="ProductViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KyA-2f-hL9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Umd-No-ZTz" userLabel="ProductTable">
+                                <rect key="frame" x="0.0" y="207" width="393" height="522"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Friendcell" rowHeight="72" id="q6r-iD-puQ" userLabel="ProductCell">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q6r-iD-puQ" id="P3w-gz-1GO">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uTA-AA-cp4" id="doZ-5Z-cck"/>
+                                    <outlet property="delegate" destination="uTA-AA-cp4" id="50O-X5-e8d"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0wu-DM-asQ">
+                                <rect key="frame" x="21" y="142" width="351" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="searchProduct:" destination="uTA-AA-cp4" eventType="editingDidEnd" id="QqI-TP-f9C"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eYe-tt-EJE">
+                                <rect key="frame" x="97" y="91" width="199" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="NoBookmark"/>
+                                    <segment title="Bookmark"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toggleBtn:" destination="uTA-AA-cp4" eventType="valueChanged" id="lfE-7g-0mb"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ELc-fI-dMn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="product" image="book" catalog="system" selectedImage="book" id="KU9-v7-off"/>
+                    <connections>
+                        <outlet property="ProductTable" destination="Umd-No-ZTz" id="E1I-VP-KBz"/>
+                        <outlet property="textField" destination="0wu-DM-asQ" id="PFK-uE-F21"/>
+                        <outlet property="toggleControl" destination="eYe-tt-EJE" id="AgQ-Ro-m0k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4J-F2-nJh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2960" y="513"/>
         </scene>
     </scenes>
     <resources>
         <image name="bell.fill" catalog="system" width="123" height="128"/>
+        <image name="book" catalog="system" width="128" height="99"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="seal" catalog="system" width="128" height="124"/>
