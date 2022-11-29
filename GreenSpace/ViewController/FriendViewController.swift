@@ -11,6 +11,7 @@ class FriendViewController: UIViewController {
     var dataArray: Array<String> = ["hi", "hello","bye","qq"]//초기값 저장해놓고 토글 바꼈을 시 저장되는 배열으로 사용
     var AllNames: Array<String> = ["hi", "hello","bye","qq"]//모든 친구
     var Follows: Array<String> = ["you", "i","me"]//팔로우
+    
     var Names:Array<String> = []
     lazy var FriendIndex: [Int:Int] = [:]
     
@@ -141,6 +142,7 @@ extension FriendViewController: UITableViewDataSource,UITableViewDelegate, Frien
             //toggle 1일때 스와이프 작동 x
         } else {
             let config = UISwipeActionsConfiguration()
+            //스와이프 작동 false
             config.performsFirstActionWithFullSwipe = false
             return config
         }
