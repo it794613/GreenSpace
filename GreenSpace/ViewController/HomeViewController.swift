@@ -10,6 +10,7 @@ import PanModal
 
 class HomeViewController: UIViewController{
     
+    @IBOutlet weak var characterImageView: UIImageView!
     @IBOutlet weak var betgeModalButton: UIButton!
     
     @IBOutlet weak var myItemModalButton: UIButton!
@@ -22,10 +23,12 @@ class HomeViewController: UIViewController{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        characterImageView.image = UIImage(named: "natural")
+        
         //유저정보 가져와서 포인트 가져옴.
         LoginAPI.profile { succeed, failed in
             if let user = succeed{
-                let userPoint = String(user.point) ?? "0"
+                let userPoint = String(user.point) ?? nil
                 self.myPoint.setTitle(userPoint, for: .normal)
             }
         }
@@ -45,8 +48,7 @@ class HomeViewController: UIViewController{
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        
-        print("heeloo")
+        characterImageView.image = UIImage(named: "natural")
         
     }
 

@@ -48,7 +48,8 @@ class SettingViewController: UIViewController{
     /// 검색 가능 기능 스위치 액션
     @IBAction func switchSearchPermission(_ sender: UISwitch) {
         //온일때 데이터 보내줘야함.
-        LoginAPI.update(request: UserRequest(nickname: GlobalUser.shared.nickname, username: GlobalUser.shared.username, point: GlobalUser.shared.point, open: sender.isOn)) { succeed, failed in
+        
+        LoginAPI.update(request: UserRequest(nickname: GlobalUser.shared.nickname, username: GlobalUser.shared.username, point: GlobalUser.shared.point, open: false)) { succeed, failed in
             if let changedUser = succeed{
                 GlobalUser.shared.open = changedUser.open
             }

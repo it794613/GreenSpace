@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
 //회원가입
     @IBAction func pressSingUp(_ sender: Any) {
         guard let id = idTextField.text else{ return returnWarning(message: "아이디를 입력해주세요.")}
@@ -52,7 +53,6 @@ class LoginViewController: UIViewController {
                 }
             }
         }
-        
         
         
     }
