@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07E1787C293609960055D80F /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E1787B293609960055D80F /* StoreViewController.swift */; };
+		07E1787E2936099E0055D80F /* BuyItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E1787D2936099E0055D80F /* BuyItemCell.swift */; };
+		07E17880293609A60055D80F /* SellItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E1787F293609A60055D80F /* SellItemCell.swift */; };
+		07E17882293609BB0055D80F /* GlobalItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E17881293609BB0055D80F /* GlobalItems.swift */; };
+		07E17884293609C30055D80F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E17883293609C30055D80F /* Models.swift */; };
+		07E17886293609C90055D80F /* BuyItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E17885293609C80055D80F /* BuyItemCell.xib */; };
+		07E17888293609CE0055D80F /* SellItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E17887293609CE0055D80F /* SellItemCell.xib */; };
+		07E1788A293609D50055D80F /* StoreScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E17889293609D50055D80F /* StoreScreen.storyboard */; };
 		0D04757B291B6B3800818C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04757A291B6B3800818C00 /* AppDelegate.swift */; };
 		0D04757D291B6B3800818C00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04757C291B6B3800818C00 /* SceneDelegate.swift */; };
 		0D04757F291B6B3800818C00 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04757E291B6B3800818C00 /* LoginViewController.swift */; };
@@ -121,6 +129,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07E1787B293609960055D80F /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		07E1787D2936099E0055D80F /* BuyItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyItemCell.swift; sourceTree = "<group>"; };
+		07E1787F293609A60055D80F /* SellItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellItemCell.swift; sourceTree = "<group>"; };
+		07E17881293609BB0055D80F /* GlobalItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalItems.swift; path = ../Models/GlobalItems.swift; sourceTree = "<group>"; };
+		07E17883293609C30055D80F /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		07E17885293609C80055D80F /* BuyItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyItemCell.xib; sourceTree = "<group>"; };
+		07E17887293609CE0055D80F /* SellItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SellItemCell.xib; sourceTree = "<group>"; };
+		07E17889293609D50055D80F /* StoreScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreScreen.storyboard; sourceTree = "<group>"; };
 		0D047577291B6B3800818C00 /* GreenSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D04757A291B6B3800818C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D04757C291B6B3800818C00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -318,6 +334,9 @@
 				4A0627D12934C402009BAEB4 /* FriendTableCell.swift */,
 				C0332FCD2936021F001B9BE4 /* ProductTableCell.swift */,
 				C0332FCB29360210001B9BE4 /* ProductViewController.swift */,
+				07E1787B293609960055D80F /* StoreViewController.swift */,
+				07E1787D2936099E0055D80F /* BuyItemCell.swift */,
+				07E1787F293609A60055D80F /* SellItemCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -333,6 +352,9 @@
 				41F381F72935FF3500DB4DB0 /* Posting.storyboard */,
 				4A0627CF2934C3F6009BAEB4 /* FriendTableCell.xib */,
 				90D6AD3D293604E100C1CCEA /* ProductTableCell.xib */,
+				07E17889293609D50055D80F /* StoreScreen.storyboard */,
+				07E17887293609CE0055D80F /* SellItemCell.xib */,
+				07E17885293609C80055D80F /* BuyItemCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -437,6 +459,7 @@
 				41F381EF2935FF0C00DB4DB0 /* GlobalPosting.swift */,
 				0D828E23292E34F3000D54BC /* GlobalPost.swift */,
 				0D828E31292F8366000D54BC /* GlobalUser.swift */,
+				07E17881293609BB0055D80F /* GlobalItems.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -496,6 +519,7 @@
 				90D6AD29292E34DE00C1CCEA /* Buy.swift */,
 				90D6AD2B292E34F500C1CCEA /* Item.swift */,
 				0D828E25292E3557000D54BC /* Post.swift */,
+				07E17883293609C30055D80F /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -637,11 +661,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E17888293609CE0055D80F /* SellItemCell.xib in Resources */,
 				0D047587291B6B3900818C00 /* LaunchScreen.storyboard in Resources */,
 				0D047584291B6B3900818C00 /* Assets.xcassets in Resources */,
+				07E1788A293609D50055D80F /* StoreScreen.storyboard in Resources */,
 				0D3CCA01291E0A28000A0CC4 /* BetgeCollectionViewCell.xib in Resources */,
 				41F381F82935FF3500DB4DB0 /* Posting.storyboard in Resources */,
 				0D047582291B6B3800818C00 /* Main.storyboard in Resources */,
+				07E17886293609C90055D80F /* BuyItemCell.xib in Resources */,
 				90D6AD3E293604E100C1CCEA /* ProductTableCell.xib in Resources */,
 				4A0627D02934C3F6009BAEB4 /* FriendTableCell.xib in Resources */,
 				41F381F62935FF2D00DB4DB0 /* PostingCustomCollectionViewCell.xib in Resources */,
@@ -670,14 +697,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E1787C293609960055D80F /* StoreViewController.swift in Sources */,
 				0D0475B3291B70F400818C00 /* HomeViewController.swift in Sources */,
 				90D6AD16292CF90900C1CCEA /* MessageResponse.swift in Sources */,
 				0D828E24292E34F3000D54BC /* GlobalPost.swift in Sources */,
 				C0332FCC29360210001B9BE4 /* ProductViewController.swift in Sources */,
 				90CADFB32929F6C00074A363 /* FriendServiceAPI.swift in Sources */,
+				07E1787E2936099E0055D80F /* BuyItemCell.swift in Sources */,
 				90CADFA92929EAF00074A363 /* MyRequestInterceptor.swift in Sources */,
 				0D04757F291B6B3800818C00 /* LoginViewController.swift in Sources */,
 				0DCD13D2291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift in Sources */,
+				07E17880293609A60055D80F /* SellItemCell.swift in Sources */,
 				90D6AD3A292E38E300C1CCEA /* BadgeResponse.swift in Sources */,
 				90D6AD1A292E2A0500C1CCEA /* Product.swift in Sources */,
 				90D6AD10292CF7E000C1CCEA /* GlobalFollowingUsers.swift in Sources */,
@@ -686,6 +716,7 @@
 				90ED97F4291BC26E00A6B983 /* TargetType.swift in Sources */,
 				0D3B3D9C2924FCE2003FC488 /* CustomView.swift in Sources */,
 				90CADFB72929F6DE0074A363 /* ItemServiceAPI.swift in Sources */,
+				07E17882293609BB0055D80F /* GlobalItems.swift in Sources */,
 				41F381F22935FF1D00DB4DB0 /* PostingCustomCollectionViewCell.swift in Sources */,
 				90CADFC82929FE510074A363 /* NoResponse.swift in Sources */,
 				0D04757B291B6B3800818C00 /* AppDelegate.swift in Sources */,
@@ -693,6 +724,7 @@
 				90D6AD06292CED7700C1CCEA /* SignupRequest.swift in Sources */,
 				90D6AD38292E38BA00C1CCEA /* GlobalBadge.swift in Sources */,
 				90D6AD26292E343B00C1CCEA /* BuyRequest.swift in Sources */,
+				07E17884293609C30055D80F /* Models.swift in Sources */,
 				90ED97F2291BC25600A6B983 /* User.swift in Sources */,
 				90ED9803291BCAEE00A6B983 /* UserServiceAPI.swift in Sources */,
 				0D04757D291B6B3800818C00 /* SceneDelegate.swift in Sources */,
