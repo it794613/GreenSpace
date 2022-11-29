@@ -37,6 +37,12 @@
 		0D828E30292F7BAA000D54BC /* PostPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D828E2F292F7BAA000D54BC /* PostPostResponse.swift */; };
 		0D828E32292F8366000D54BC /* GlobalUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D828E31292F8366000D54BC /* GlobalUser.swift */; };
 		0DCD13D2291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */; };
+		41F381F02935FF0C00DB4DB0 /* GlobalPosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F381EF2935FF0C00DB4DB0 /* GlobalPosting.swift */; };
+		41F381F22935FF1D00DB4DB0 /* PostingCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F381F12935FF1D00DB4DB0 /* PostingCustomCollectionViewCell.swift */; };
+		41F381F42935FF2400DB4DB0 /* PostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F381F32935FF2400DB4DB0 /* PostingViewController.swift */; };
+		41F381F62935FF2D00DB4DB0 /* PostingCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F381F52935FF2D00DB4DB0 /* PostingCustomCollectionViewCell.xib */; };
+		41F381F82935FF3500DB4DB0 /* Posting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F381F72935FF3500DB4DB0 /* Posting.storyboard */; };
+		41F381FB2936007B00DB4DB0 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 41F381FA2936007B00DB4DB0 /* YPImagePicker */; };
 		4A0627CE2934C3C9009BAEB4 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0627CD2934C3C9009BAEB4 /* FriendViewController.swift */; };
 		4A0627D02934C3F6009BAEB4 /* FriendTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0627CF2934C3F6009BAEB4 /* FriendTableCell.xib */; };
 		4A0627D22934C402009BAEB4 /* FriendTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0627D12934C402009BAEB4 /* FriendTableCell.swift */; };
@@ -144,6 +150,11 @@
 		0D828E2F292F7BAA000D54BC /* PostPostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPostResponse.swift; sourceTree = "<group>"; };
 		0D828E31292F8366000D54BC /* GlobalUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalUser.swift; sourceTree = "<group>"; };
 		0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetgeCollectionViewCell.swift; sourceTree = "<group>"; };
+		41F381EF2935FF0C00DB4DB0 /* GlobalPosting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalPosting.swift; sourceTree = "<group>"; };
+		41F381F12935FF1D00DB4DB0 /* PostingCustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostingCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		41F381F32935FF2400DB4DB0 /* PostingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostingViewController.swift; sourceTree = "<group>"; };
+		41F381F52935FF2D00DB4DB0 /* PostingCustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostingCustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		41F381F72935FF3500DB4DB0 /* Posting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Posting.storyboard; sourceTree = "<group>"; };
 		4A0627CD2934C3C9009BAEB4 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		4A0627CF2934C3F6009BAEB4 /* FriendTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendTableCell.xib; sourceTree = "<group>"; };
 		4A0627D12934C402009BAEB4 /* FriendTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableCell.swift; sourceTree = "<group>"; };
@@ -207,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3CC9FD291DFE3E000A0CC4 /* PanModal in Frameworks */,
+				41F381FB2936007B00DB4DB0 /* YPImagePicker in Frameworks */,
 				0D0475AF291B6FEA00818C00 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +303,8 @@
 				0D0475B6291B860A00818C00 /* AlarmTableViewCell.swift */,
 				0D0475BC291CCF1A00818C00 /* MyItemCollectionViewController.swift */,
 				0D3CCA04291E1991000A0CC4 /* MyItemCollectionViewCell.swift */,
+				41F381F32935FF2400DB4DB0 /* PostingViewController.swift */,
+				41F381F12935FF1D00DB4DB0 /* PostingCustomCollectionViewCell.swift */,
 				0D3CC9FE291E05A0000A0CC4 /* BetgeCollectionViewController.swift */,
 				0DCD13D1291D0D6E00BE3B9B /* BetgeCollectionViewCell.swift */,
 				0D3B3D9B2924FCE2003FC488 /* CustomView.swift */,
@@ -307,6 +321,8 @@
 				0D3CCA02291E193F000A0CC4 /* MyItemCollectionViewCell.xib */,
 				0D047585291B6B3900818C00 /* LaunchScreen.storyboard */,
 				0D3CCA00291E0A28000A0CC4 /* BetgeCollectionViewCell.xib */,
+				41F381F52935FF2D00DB4DB0 /* PostingCustomCollectionViewCell.xib */,
+				41F381F72935FF3500DB4DB0 /* Posting.storyboard */,
 				4A0627CF2934C3F6009BAEB4 /* FriendTableCell.xib */,
 			);
 			path = View;
@@ -409,6 +425,7 @@
 				90D6AD2D292E354A00C1CCEA /* GlobalBuy.swift */,
 				90D6AD35292E384900C1CCEA /* GlobalItem.swift */,
 				90D6AD37292E38BA00C1CCEA /* GlobalBadge.swift */,
+				41F381EF2935FF0C00DB4DB0 /* GlobalPosting.swift */,
 				0D828E23292E34F3000D54BC /* GlobalPost.swift */,
 				0D828E31292F8366000D54BC /* GlobalUser.swift */,
 			);
@@ -516,6 +533,7 @@
 			packageProductDependencies = (
 				0D0475AE291B6FEA00818C00 /* Alamofire */,
 				0D3CC9FC291DFE3E000A0CC4 /* PanModal */,
+				41F381FA2936007B00DB4DB0 /* YPImagePicker */,
 			);
 			productName = GreenSpace;
 			productReference = 0D047577291B6B3800818C00 /* GreenSpace.app */;
@@ -592,6 +610,7 @@
 			packageReferences = (
 				0D0475AD291B6FEA00818C00 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0D3CC9FB291DFE3E000A0CC4 /* XCRemoteSwiftPackageReference "PanModal" */,
+				41F381F92936007B00DB4DB0 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
 			);
 			productRefGroup = 0D047578291B6B3800818C00 /* Products */;
 			projectDirPath = "";
@@ -612,8 +631,10 @@
 				0D047587291B6B3900818C00 /* LaunchScreen.storyboard in Resources */,
 				0D047584291B6B3900818C00 /* Assets.xcassets in Resources */,
 				0D3CCA01291E0A28000A0CC4 /* BetgeCollectionViewCell.xib in Resources */,
+				41F381F82935FF3500DB4DB0 /* Posting.storyboard in Resources */,
 				0D047582291B6B3800818C00 /* Main.storyboard in Resources */,
 				4A0627D02934C3F6009BAEB4 /* FriendTableCell.xib in Resources */,
+				41F381F62935FF2D00DB4DB0 /* PostingCustomCollectionViewCell.xib in Resources */,
 				0D3CCA03291E193F000A0CC4 /* MyItemCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -653,6 +674,7 @@
 				90ED97F4291BC26E00A6B983 /* TargetType.swift in Sources */,
 				0D3B3D9C2924FCE2003FC488 /* CustomView.swift in Sources */,
 				90CADFB72929F6DE0074A363 /* ItemServiceAPI.swift in Sources */,
+				41F381F22935FF1D00DB4DB0 /* PostingCustomCollectionViewCell.swift in Sources */,
 				90CADFC82929FE510074A363 /* NoResponse.swift in Sources */,
 				0D04757B291B6B3800818C00 /* AppDelegate.swift in Sources */,
 				90CADFC12929F70C0074A363 /* PostServieTarget.swift in Sources */,
@@ -674,6 +696,7 @@
 				90D6AD1C292E2A5100C1CCEA /* GlobalProducts.swift in Sources */,
 				90CADFB52929F6CA0074A363 /* FriendServiceTarget.swift in Sources */,
 				90D6AD12292CF7FA00C1CCEA /* GlobalFollwedUsers.swift in Sources */,
+				41F381F42935FF2400DB4DB0 /* PostingViewController.swift in Sources */,
 				0D3CC9FF291E05A0000A0CC4 /* BetgeCollectionViewController.swift in Sources */,
 				90D6AD2C292E34F500C1CCEA /* Item.swift in Sources */,
 				90D6AD0C292CF3F000C1CCEA /* EmptyResponse.swift in Sources */,
@@ -689,6 +712,7 @@
 				90D6AD36292E384900C1CCEA /* GlobalItem.swift in Sources */,
 				0D0475B1291B70C200818C00 /* SettingViewController.swift in Sources */,
 				90CADFCC2929FED80074A363 /* FollowingRequest.swift in Sources */,
+				41F381F02935FF0C00DB4DB0 /* GlobalPosting.swift in Sources */,
 				90CADFD0292A00290074A363 /* FollowedListRequest.swift in Sources */,
 				90D6AD32292E366900C1CCEA /* UpdateBuyResponse.swift in Sources */,
 				90D6AD20292E2C1100C1CCEA /* Bookmark.swift in Sources */,
@@ -1066,6 +1090,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		41F381F92936007B00DB4DB0 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1078,6 +1110,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0D3CC9FB291DFE3E000A0CC4 /* XCRemoteSwiftPackageReference "PanModal" */;
 			productName = PanModal;
+		};
+		41F381FA2936007B00DB4DB0 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41F381F92936007B00DB4DB0 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 
