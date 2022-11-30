@@ -96,6 +96,7 @@ extension ProductViewController: UITableViewDataSource, ProductCellDelegate{
                 Bookmark.append(dataArray[index])
                 AllNames.remove(at: index)
                 Names.remove(at: index)
+                ProductTable.reloadData()
             }
             
             
@@ -107,6 +108,7 @@ extension ProductViewController: UITableViewDataSource, ProductCellDelegate{
                 AllNames.append(dataArray[index])
                 Bookmark.remove(at: index)
                 Names.remove(at: index)
+                ProductTable.reloadData()
 
             }
             
