@@ -9,19 +9,23 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostingCustomCollectionViewCell" id="tRq-SX-F50" customClass="PostingCustomCollectionViewCell" customModule="Post" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostingCustomCollectionViewCell" id="tRq-SX-F50" customClass="PostingCustomCollectionViewCell" customModule="GreenSpace" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="195" height="187"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="hGy-oI-ECe">
                 <rect key="frame" x="0.0" y="0.0" width="195" height="187"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnV-2I-OCV">
-                        <rect key="frame" x="119" y="24" width="59.666666666666657" height="35"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnV-2I-OCV">
+                        <rect key="frame" x="120" y="15" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="Pbh-QK-Vuq"/>
+                            <constraint firstAttribute="height" constant="45" id="rPT-hb-igP"/>
+                        </constraints>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="yp_remove" title="Button">
+                        <buttonConfiguration key="configuration" style="plain" image="trash.circle" catalog="system" title="Button">
                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="1"/>
+                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </buttonConfiguration>
                     </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jBr-41-BNG">
@@ -35,7 +39,9 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="jBr-41-BNG" secondAttribute="bottom" constant="15" id="4cO-rU-Lt3"/>
                     <constraint firstItem="jBr-41-BNG" firstAttribute="top" secondItem="hGy-oI-ECe" secondAttribute="top" constant="15" id="GOP-NQ-BS7"/>
+                    <constraint firstItem="MnV-2I-OCV" firstAttribute="trailing" secondItem="jBr-41-BNG" secondAttribute="trailing" id="VOQ-ZF-Efc"/>
                     <constraint firstItem="jBr-41-BNG" firstAttribute="leading" secondItem="hGy-oI-ECe" secondAttribute="leading" constant="15" id="b0Y-V3-YQ6"/>
+                    <constraint firstItem="MnV-2I-OCV" firstAttribute="top" secondItem="jBr-41-BNG" secondAttribute="top" id="s9T-iE-xck"/>
                     <constraint firstAttribute="trailing" secondItem="jBr-41-BNG" secondAttribute="trailing" constant="15" id="scK-Cd-pLD"/>
                 </constraints>
             </collectionViewCellContentView>
@@ -48,6 +54,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="yp_remove" width="32" height="32"/>
+        <image name="trash.circle" catalog="system" width="128" height="123"/>
     </resources>
 </document>

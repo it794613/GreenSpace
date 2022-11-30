@@ -28,7 +28,7 @@ class PostingCustomCollectionViewCell:  UICollectionViewCell {
         contentView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         contentView.layer.cornerRadius = 8
         contentView.layer.borderWidth = 1
-        contentView.layer.borderColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
+        contentView.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         self.postImage.layer.cornerRadius = postImage.frame.height
         
