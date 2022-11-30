@@ -53,9 +53,11 @@ class SettingViewController: UIViewController{
         LoginAPI.update(request: UserRequest(open: false)) { succeed, failed in
             if let changedUser = succeed{
                 GlobalUser.shared.open = changedUser.open
+                GlobalUser.shared.show()
             }
         }
     }
+
 
 
     /// 로그아웃 버튼 액션
