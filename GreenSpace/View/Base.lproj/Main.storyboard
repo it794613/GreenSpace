@@ -422,6 +422,7 @@
                     <tabBarItem key="tabBarItem" title="setting" image="seal" catalog="system" id="Wrx-cZ-HyJ"/>
                     <connections>
                         <outlet property="NickNameTextField" destination="08H-Zo-wIk" id="fZa-pu-SSO"/>
+                        <outlet property="switchButton" destination="Wol-Nu-e3R" id="GKw-yV-aqM"/>
                         <outlet property="userNickName" destination="rUt-z7-mNu" id="V4V-Gc-I4f"/>
                     </connections>
                 </viewController>
