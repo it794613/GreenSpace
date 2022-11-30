@@ -20,25 +20,26 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var myPoint: UIButton!
     @IBOutlet weak var betgeImageView: UIImageView!
     
+    
+    func setPoint(){
+        let userPoint = String(GlobalUser.shared.point) ?? "0"
+        myPoint.setTitle("\(userPoint) 포인트", for: .normal)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         characterImageView.image = UIImage(named: "natural")
         
         //유저정보 가져와서 포인트 가져옴.
-        LoginAPI.profile { succeed, failed in
-            if let user = succeed{
-                let userPoint = String(user.point) ?? nil
-                self.myPoint.setTitle(userPoint, for: .normal)
-            }
-        }
-        
-        
-        
+        LoginAPI.profile { succeed, failed in }
+        setPoint()
         myItemImageView.image = UIImage(named: GlobalImage.shared.myItemImageName)
         betgeImageView.image = UIImage(named: GlobalImage.shared.betgeImageName)
         navigationController?.isNavigationBarHidden = true
     }
+    
+    
     
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -48,8 +49,9 @@ class HomeViewController: UIViewController{
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        characterImageView.image = UIImage(named: "natural")
         
+        characterImageView.image = UIImage(named: "natural")
+        LoginAPI.profile { succeed, failed in }
     }
 
 

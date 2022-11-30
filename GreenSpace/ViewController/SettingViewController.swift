@@ -9,6 +9,7 @@ import UIKit
 
 class SettingViewController: UIViewController{
     
+    @IBOutlet weak var switchButton: UISwitch!
     @IBOutlet weak var NickNameTextField: UITextField!
     
     @IBOutlet weak var userNickName: UILabel!
@@ -48,10 +49,20 @@ class SettingViewController: UIViewController{
     /// 검색 가능 기능 스위치 액션
     @IBAction func switchSearchPermission(_ sender: UISwitch) {
         //온일때 데이터 보내줘야함.
-        
-        LoginAPI.update(request: UserRequest(nickname: GlobalUser.shared.nickname, username: GlobalUser.shared.username, point: GlobalUser.shared.point, open: false)) { succeed, failed in
-            if let changedUser = succeed{
-                GlobalUser.shared.open = changedUser.open
+        if sender.isOn {
+            LoginAPI.update(request: UserRequest(nickname: GlobalUser.shared.nickname, username: GlobalUser.shared.username, point: GlobalUser.shared.point, open: true)) { succeed, failed in
+                if let changedUser = succeed{
+                    GlobalUser.shared.open = changedUser.open
+                }
+            }
+            print(sender.isOn)
+            print(GlobalUser.shared.open)
+        }else{
+            print(sender.isOn)
+            LoginAPI.update(request: UserRequest(nickname: GlobalUser.shared.nickname, username: GlobalUser.shared.username, point: GlobalUser.shared.point, open: false)) { succeed, failed in
+                if let changedUser = succeed{
+                    GlobalUser.shared.open = changedUser.open
+                }
             }
         }
     }
@@ -97,9 +108,9 @@ extension SettingViewController: UITextFieldDelegate{
         userNickName.text = textField.text
         // usernickname 변화를 서버에 보내줌
         if let inputNickName = userNickName.text{
-            LoginAPI.update(request: UserRequest(nickname: inputNickName, username: GlobalUser.shared.username, point: GlobalUser.shared.point, open: GlobalUser.shared.open)) { succeed, failed in
+            LoginAPI.update(request: UserRequest(nickname: GlobalUser.shared.nickname, username: inputNickName, point: GlobalUser.shared.point, open: GlobalUser.shared.open)) { succeed, failed in
                 if let changedUser = succeed{
-                    GlobalUser.shared.nickname = changedUser.nickname
+                    GlobalUser.shared.username = changedUser.username
                 }
             }
         }

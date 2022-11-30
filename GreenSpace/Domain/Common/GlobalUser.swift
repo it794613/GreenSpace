@@ -16,4 +16,11 @@ class GlobalUser{
     var open: Bool = true
     
     
+    func show(){
+        print(self.nickname)
+        print(self.username)
+        print(self.point)
+        print(self.open)
+    }
+    
 }
