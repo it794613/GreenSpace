@@ -465,10 +465,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="qV5-ou-1R1" kind="relationship" relationship="viewControllers" id="hvI-bp-va2"/>
-                        <segue destination="0Fb-87-wbL" kind="relationship" relationship="viewControllers" id="49x-gZ-sdf"/>
-                        <segue destination="9JK-Cb-uJK" kind="relationship" relationship="viewControllers" id="EYo-aD-Zmk"/>
                         <segue destination="uTA-AA-cp4" kind="relationship" relationship="viewControllers" id="G0k-pf-Q8S"/>
                         <segue destination="61K-HC-GCk" kind="relationship" relationship="viewControllers" id="wMP-gc-GU5"/>
+                        <segue destination="0Fb-87-wbL" kind="relationship" relationship="viewControllers" id="49x-gZ-sdf"/>
+                        <segue destination="9JK-Cb-uJK" kind="relationship" relationship="viewControllers" id="EYo-aD-Zmk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqh-El-mNN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -649,6 +649,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0z-bU-6IT" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3705" y="525"/>
+        </scene>
+        <!--Store View Controller-->
+        <scene sceneID="KqH-Ee-GQ4">
+            <objects>
+                <viewController storyboardIdentifier="StoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oYj-RS-9Js" customClass="StoreViewController" customModule="GreenSpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L2J-AS-f21">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3GO-da-eQm">
+                                <rect key="frame" x="0.0" y="47" width="390" height="797"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xfE-Yd-vwF">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rE9-40-bmR">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Ia-sG-QRo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3GO-da-eQm" secondAttribute="bottom" id="ZtD-Cs-2NG"/>
+                            <constraint firstItem="3GO-da-eQm" firstAttribute="leading" secondItem="4Ia-sG-QRo" secondAttribute="leading" id="mhH-9B-FaH"/>
+                            <constraint firstItem="3GO-da-eQm" firstAttribute="trailing" secondItem="4Ia-sG-QRo" secondAttribute="trailing" id="njj-TT-h75"/>
+                            <constraint firstItem="3GO-da-eQm" firstAttribute="top" secondItem="4Ia-sG-QRo" secondAttribute="top" id="wgX-1N-MlR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="3GO-da-eQm" id="TMd-Cf-xCi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2S-qI-jIV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037" y="594"/>
         </scene>
     </scenes>
     <resources>

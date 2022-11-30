@@ -21,7 +21,7 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var betgeImageView: UIImageView!
     
     @IBAction func pressStoreView(_ sender: UIButton) {
-        if let pushVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: .self)){
+        if let pushVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: StoreViewController.self)){
             self.navigationController?.pushViewController(pushVC, animated: true)
         }
     }

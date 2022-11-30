@@ -14,7 +14,6 @@
 		07E17884293609C30055D80F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E17883293609C30055D80F /* Models.swift */; };
 		07E17886293609C90055D80F /* BuyItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E17885293609C80055D80F /* BuyItemCell.xib */; };
 		07E17888293609CE0055D80F /* SellItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E17887293609CE0055D80F /* SellItemCell.xib */; };
-		07E1788A293609D50055D80F /* StoreScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E17889293609D50055D80F /* StoreScreen.storyboard */; };
 		0D04757B291B6B3800818C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04757A291B6B3800818C00 /* AppDelegate.swift */; };
 		0D04757D291B6B3800818C00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04757C291B6B3800818C00 /* SceneDelegate.swift */; };
 		0D04757F291B6B3800818C00 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04757E291B6B3800818C00 /* LoginViewController.swift */; };
@@ -136,7 +135,6 @@
 		07E17883293609C30055D80F /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		07E17885293609C80055D80F /* BuyItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyItemCell.xib; sourceTree = "<group>"; };
 		07E17887293609CE0055D80F /* SellItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SellItemCell.xib; sourceTree = "<group>"; };
-		07E17889293609D50055D80F /* StoreScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreScreen.storyboard; sourceTree = "<group>"; };
 		0D047577291B6B3800818C00 /* GreenSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D04757A291B6B3800818C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D04757C291B6B3800818C00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -352,7 +350,6 @@
 				41F381F72935FF3500DB4DB0 /* Posting.storyboard */,
 				4A0627CF2934C3F6009BAEB4 /* FriendTableCell.xib */,
 				90D6AD3D293604E100C1CCEA /* ProductTableCell.xib */,
-				07E17889293609D50055D80F /* StoreScreen.storyboard */,
 				07E17887293609CE0055D80F /* SellItemCell.xib */,
 				07E17885293609C80055D80F /* BuyItemCell.xib */,
 			);
@@ -664,7 +661,6 @@
 				07E17888293609CE0055D80F /* SellItemCell.xib in Resources */,
 				0D047587291B6B3900818C00 /* LaunchScreen.storyboard in Resources */,
 				0D047584291B6B3900818C00 /* Assets.xcassets in Resources */,
-				07E1788A293609D50055D80F /* StoreScreen.storyboard in Resources */,
 				0D3CCA01291E0A28000A0CC4 /* BetgeCollectionViewCell.xib in Resources */,
 				41F381F82935FF3500DB4DB0 /* Posting.storyboard in Resources */,
 				0D047582291B6B3800818C00 /* Main.storyboard in Resources */,
