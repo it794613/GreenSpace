@@ -20,8 +20,17 @@ class SettingViewController: UIViewController{
         super.viewDidLoad()
         NickNameTextField.delegate = self
         NickNameTextField.isHidden = nickNameTextFiledIsHidden
+        switchButton.isOn = GlobalUser.shared.open
+        userNickName.text = GlobalUser.shared.username
     }
-
+    
+    private func showAlert(){
+        let alert = UIAlertController(title: "에러", message: "네트워크 통신이 원활하지 않습니다.", preferredStyle: UIAlertController.Style.alert)
+        let defaultAlert = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
+        alert.addAction(defaultAlert)
+        self.present(alert, animated: false)
+    }
+    
 
     //로그인뷰 보내는 함수
     func presentLoginView(){
@@ -50,7 +59,7 @@ class SettingViewController: UIViewController{
     @IBAction func switchSearchPermission(_ sender: UISwitch) {
         //온일때 데이터 보내줘야함.
 
-        LoginAPI.update(request: UserRequest(open: false)) { succeed, failed in
+        LoginAPI.update(request: UserRequest(open: sender.isOn)) { succeed, failed in
             if let changedUser = succeed{
                 GlobalUser.shared.open = changedUser.open
                 GlobalUser.shared.show()
@@ -78,11 +87,7 @@ class SettingViewController: UIViewController{
                 self.presentLoginView()
             } else {
                 //알람창
-                print("deleted")
-                let alert = UIAlertController(title: "에러", message: "네트워크 통신이 원활하지 않습니다.", preferredStyle: UIAlertController.Style.alert)
-                let defaultAlert = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
-                alert.addAction(defaultAlert)
-                self.present(alert, animated: false)
+                self.showAlert()
             }
         }
     }
@@ -97,12 +102,14 @@ extension SettingViewController: UITextFieldDelegate{
         return true
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        userNickName.text = textField.text
         // usernickname 변화를 서버에 보내줌
         if let inputNickName = userNickName.text{
             LoginAPI.update(request: UserRequest(username: inputNickName)) { succeed, failed in
                 if let changedUser = succeed{
                     GlobalUser.shared.username = changedUser.username
+                    self.userNickName.text = textField.text
+                }else{
+                    self.showAlert()
                 }
             }
         }

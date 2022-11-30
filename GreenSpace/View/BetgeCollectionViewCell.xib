@@ -58,6 +58,7 @@
             <size key="customSize" width="550" height="456"/>
             <connections>
                 <outlet property="betgeImageView" destination="8lJ-0q-WAB" id="NLU-EB-NWY"/>
+                <outlet property="checkButton" destination="z2e-B4-JjO" id="wQp-ip-YNF"/>
             </connections>
             <point key="canvasLocation" x="98.461538461538453" y="49.763033175355446"/>
         </collectionViewCell>

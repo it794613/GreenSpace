@@ -10,6 +10,7 @@ import UIKit
 class MyItemCollectionViewCell: UICollectionViewCell{
     
     //delete button에 작동할 closure
+    @IBOutlet weak var checkButton: UIButton!
     var selectItem: (()->()) = {}
     
     var imageName = ""

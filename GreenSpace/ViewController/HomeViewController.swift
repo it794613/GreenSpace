@@ -20,6 +20,11 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var myPoint: UIButton!
     @IBOutlet weak var betgeImageView: UIImageView!
     
+    @IBAction func pressStoreView(_ sender: UIButton) {
+        if let pushVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: .self)){
+            self.navigationController?.pushViewController(pushVC, animated: true)
+        }
+    }
     
     func setPoint(){
         let userPoint = String(GlobalUser.shared.point) ?? "0"

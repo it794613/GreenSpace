@@ -9,6 +9,7 @@ import UIKit
 
 class BetgeCollectionViewCell: UICollectionViewCell{
     
+    @IBOutlet weak var checkButton: UIButton!
     @IBOutlet weak var betgeImageView: UIImageView!
     
     var selectBetge: (()->())={}

@@ -36,9 +36,13 @@ class MyItemCollectionViewController: UICollectionViewController{
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MyItemCollectionViewCell.self), for: indexPath) as! MyItemCollectionViewCell
         let cellData = GlobalBuy.shared.array[indexPath.row]
-        cell.myItemImageView.image = UIImage(named: cellData.item.image)
-        cell.imageName = cellData.item.image
+        //데모시 제거 코드
+        let url = URL(string: cellData.item.image)
+        cell.myItemImageView.load(url: url!)
+        //데모시 살릴코드
+//        cell.myItemImageView.image = UIImage(named: "testimage")
         
+        cell.imageName = cellData.item.image
         //딜리트 버튼이 눌렸을때 작동할 함수 넘겨주기
         cell.selectItem = {
             print("rows = \(indexPath.row)")

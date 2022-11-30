@@ -59,6 +59,7 @@
             </collectionViewCellContentView>
             <size key="customSize" width="214" height="212"/>
             <connections>
+                <outlet property="checkButton" destination="9Pz-1h-AWg" id="SiT-ag-MNY"/>
                 <outlet property="myItemImageView" destination="kDS-Cx-L9y" id="ide-5O-qQi"/>
             </connections>
             <point key="canvasLocation" x="321.53846153846155" y="7.8199052132701414"/>

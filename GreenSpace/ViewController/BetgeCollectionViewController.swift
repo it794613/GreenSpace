@@ -39,7 +39,8 @@ extension BetgeCollectionViewController{
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MyItemCollectionViewCell.self), for: indexPath) as! BetgeCollectionViewCell
         let cellData = GlobalBadge.shared.array[indexPath.row]
-        cell.betgeImageView.image = UIImage(named: cellData.image)
+        let url = URL(string: cellData.image)
+        cell.betgeImageView.load(url: url!)
         cell.imageName = cellData.image
         
         //딜리트 버튼이 눌렸을때 작동할 함수 넘겨주기
@@ -47,7 +48,6 @@ extension BetgeCollectionViewController{
             print("rows = \(indexPath.row)")
             GlobalImage.shared.betgeImageName = cell.imageName
         }
-        
         return cell
     }
 }
