@@ -49,7 +49,7 @@ class SettingViewController: UIViewController{
     @IBAction func switchSearchPermission(_ sender: UISwitch) {
         //온일때 데이터 보내줘야함.
         
-        LoginAPI.update(request: UserRequest(nickname: GlobalUser.shared.nickname, username: GlobalUser.shared.username, point: GlobalUser.shared.point, open: false)) { succeed, failed in
+        LoginAPI.update(request: UserRequest(open: false)) { succeed, failed in
             if let changedUser = succeed{
                 GlobalUser.shared.open = changedUser.open
             }
@@ -97,7 +97,7 @@ extension SettingViewController: UITextFieldDelegate{
         userNickName.text = textField.text
         // usernickname 변화를 서버에 보내줌
         if let inputNickName = userNickName.text{
-            LoginAPI.update(request: UserRequest(nickname: inputNickName, username: GlobalUser.shared.username, point: GlobalUser.shared.point, open: GlobalUser.shared.open)) { succeed, failed in
+            LoginAPI.update(request: UserRequest(username: inputNickName)) { succeed, failed in
                 if let changedUser = succeed{
                     GlobalUser.shared.nickname = changedUser.nickname
                 }

@@ -8,8 +8,15 @@
 import Foundation
 
 struct UserRequest: Encodable{
-    let nickname: String
-    let username: String
-    let point: Int
-    let open: Bool
+    var username: String?
+    var point: Int?
+    var open: Bool?
+    
+    init(username: String) {
+        self.username = username
+    }
+    
+    init(open: Bool) {
+        self.open = open
+    }
 }
